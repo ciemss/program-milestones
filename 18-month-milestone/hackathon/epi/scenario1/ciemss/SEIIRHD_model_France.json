@@ -450,7 +450,7 @@
        "name": "infected",
        "expression": "I_mild + I_case + I_hosp",
        "expression_mathml": "<apply><plus/><ci>I_mild</ci><ci>I_case</ci><ci>I_hosp</ci></apply>"
-     },
+     }
    ],
    "time": {
     "id": "t",
