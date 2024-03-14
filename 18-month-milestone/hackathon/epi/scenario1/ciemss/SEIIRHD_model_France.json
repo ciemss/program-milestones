@@ -261,7 +261,43 @@
      "expression_mathml": "<apply><times/><ci>I_hosp</ci><ci>mu_caseD</ci></apply>"
     }
    ],
-   "initials": [],
+   "initials": [
+     {
+       "target": "S",
+       "expression": "total_population - Im0 - Ic0",
+       "expression_mathml": "<apply><minus/><ci>total_population</ci><ci>I0</ci></apply>"
+     },
+     {
+       "target": "I_mild",
+       "expression": "Im0",
+       "expression_mathml": "<ci>I0</ci>"
+     },
+     {
+       "target": "I_case",
+       "expression": "Ic0",
+       "expression_mathml": "<ci>I0</ci>"
+     },
+     {
+       "target": "E",
+       "expression": "40.0000000000000",
+       "expression_mathml": "<cn>40.0</cn>"
+     },
+     {
+       "target": "R",
+       "expression": "0.0",
+       "expression_mathml": "<cn>0.0</cn>"
+     },
+     {
+       "target": "I_hosp",
+       "expression": "0.0",
+       "expression_mathml": "<cn>0.0</cn>"
+     },
+     {
+       "target": "D",
+       "expression": "0.0",
+       "expression_mathml": "<cn>0.0</cn>"
+     }
+   ],
    "parameters": [
     {
      "id": "N",
@@ -272,63 +308,150 @@
      }
     },
     {
-     "id": "beta_mild",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "Im0",
+      "value": 50.0,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 100.0,
+          "maximum": 25.0
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "beta_case",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "Ic0",
+      "value": 10.0,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 15.0,
+          "maximum": 8.0
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "alpha_mild",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "beta_mild",
+      "value": 0.3,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.45,
+          "maximum": 0.15
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "alpha_case",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "beta_case",
+      "value": 0.4,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.6,
+          "maximum": 0.3
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "gamma_mildR",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "alpha_mild",
+      "value": 0.25,
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "gamma_caseH",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "alpha_case",
+      "value": 0.3,
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "delta_caseR",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "gamma_mildR",
+      "value": 0.11,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.16,
+          "maximum": 0.1
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     },
     {
-     "id": "mu_caseD",
-     "units": {
-      "expression": "1/day",
-      "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
-     }
+      "id": "gamma_caseH",
+      "value": 0.14,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.15,
+          "maximum": 0.12
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
+    },
+    {
+      "id": "delta_caseR",
+      "value": 0.225,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.25,
+          "maximum": 0.15
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
+    },
+    {
+      "id": "mu_caseD",
+      "value": 0.025,
+      "distribution": {
+        "type": "Uniform1",
+        "parameters": {
+          "minimum": 0.03,
+          "maximum": 0.02
+        }
+      },
+      "units": {
+        "expression": "1/day",
+        "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
+      }
     }
    ],
-   "observables": [],
+   "observables": [
+    {
+       "id": "infected",
+       "name": "infected",
+       "expression": "I_mild + I_case + I_hosp",
+       "expression_mathml": "<apply><plus/><ci>I_mild</ci><ci>I_case</ci><ci>I_hosp</ci></apply>"
+     },
+   ],
    "time": {
     "id": "t",
     "units": {
