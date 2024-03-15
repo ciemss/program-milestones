@@ -264,8 +264,8 @@
    "initials": [
      {
        "target": "S",
-       "expression": "total_population - Im0 - Ic0",
-       "expression_mathml": "<apply><minus/><ci>total_population</ci><ci>I0</ci></apply>"
+       "expression": "N - Im0 - Ic0",
+       "expression_mathml": "<apply><minus/><ci>N</ci><ci>I0</ci></apply>"
      },
      {
        "target": "I_mild",
@@ -313,8 +313,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 100.0,
-          "maximum": 25.0
+          "minimum": 25.0,
+          "maximum": 100.0
         }
       },
       "units": {
@@ -328,8 +328,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 15.0,
-          "maximum": 8.0
+          "minimum": 8.0,
+          "maximum": 15.0
         }
       },
       "units": {
@@ -343,8 +343,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.45,
-          "maximum": 0.15
+          "minimum": 0.15,
+          "maximum": 0.45
         }
       },
       "units": {
@@ -358,8 +358,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.6,
-          "maximum": 0.3
+          "minimum": 0.3,
+          "maximum": 0.6
         }
       },
       "units": {
@@ -389,8 +389,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.16,
-          "maximum": 0.1
+          "minimum": 0.1,
+          "maximum": 0.16
         }
       },
       "units": {
@@ -404,8 +404,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.15,
-          "maximum": 0.12
+          "minimum": 0.12,
+          "maximum": 0.15
         }
       },
       "units": {
@@ -419,8 +419,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.25,
-          "maximum": 0.15
+          "minimum": 0.15,
+          "maximum": 0.25
         }
       },
       "units": {
@@ -434,8 +434,8 @@
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 0.03,
-          "maximum": 0.02
+          "minimum": 0.02,
+          "maximum": 0.03
         }
       },
       "units": {
@@ -450,7 +450,7 @@
        "name": "infected",
        "expression": "I_mild + I_case + I_hosp",
        "expression_mathml": "<apply><plus/><ci>I_mild</ci><ci>I_case</ci><ci>I_hosp</ci></apply>"
-     }
+    }
    ],
    "time": {
     "id": "t",
