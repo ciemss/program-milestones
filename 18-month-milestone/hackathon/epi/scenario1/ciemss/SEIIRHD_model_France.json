@@ -279,7 +279,7 @@
      },
      {
        "target": "E",
-       "expression": "40.0000000000000",
+       "expression": "0.0000000000000",
        "expression_mathml": "<cn>40.0</cn>"
      },
      {
@@ -309,12 +309,12 @@
     },
     {
       "id": "Im0",
-      "value": 50.0,
+      "value": 2.0,
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 25.0,
-          "maximum": 100.0
+          "minimum": 1.0,
+          "maximum": 5.0
         }
       },
       "units": {
@@ -324,12 +324,12 @@
     },
     {
       "id": "Ic0",
-      "value": 10.0,
+      "value": 2.0,
       "distribution": {
         "type": "Uniform1",
         "parameters": {
-          "minimum": 8.0,
-          "maximum": 15.0
+          "minimum": 1.0,
+          "maximum": 5.0
         }
       },
       "units": {
