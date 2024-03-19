@@ -608,356 +608,596 @@
             {
                "trajectory": "Infected",
                "timepoint": 1.0,
-               "lower": 2.605812430381775,
-               "upper": 2.7453619480133056
+               "lower": 3.769882392883301,
+               "upper": 3.9457659840583803
             },
             {
                "trajectory": "Infected",
                "timepoint": 2.0,
-               "lower": 2.8456494569778443,
-               "upper": 2.9976191043853757
+               "lower": 4.015613269805908,
+               "upper": 4.20719084739685
             },
             {
                "trajectory": "Infected",
                "timepoint": 3.0,
-               "lower": 3.2193331480026246,
-               "upper": 3.391269850730896
+               "lower": 4.446152377128601,
+               "upper": 4.645949792861939
             },
             {
                "trajectory": "Infected",
                "timepoint": 4.0,
-               "lower": 3.678073251247406,
-               "upper": 3.8824053406715393
+               "lower": 4.984740781784057,
+               "upper": 5.198888921737671
             },
             {
                "trajectory": "Infected",
                "timepoint": 5.0,
-               "lower": 4.218341326713562,
-               "upper": 4.457640528678894
+               "lower": 5.598038196563721,
+               "upper": 5.839437031745911
             },
             {
                "trajectory": "Infected",
                "timepoint": 6.0,
-               "lower": 4.8303954839706424,
-               "upper": 5.115680360794068
+               "lower": 6.280082106590271,
+               "upper": 6.57038722038269
             },
             {
                "trajectory": "Infected",
                "timepoint": 7.0,
-               "lower": 5.526729941368103,
-               "upper": 5.863148927688599
+               "lower": 7.047973251342773,
+               "upper": 7.382547211647034
             },
             {
                "trajectory": "Infected",
                "timepoint": 8.0,
-               "lower": 6.31081190109253,
-               "upper": 6.708953499794006
+               "lower": 7.904584240913391,
+               "upper": 8.294176721572876
             },
             {
                "trajectory": "Infected",
                "timepoint": 9.0,
-               "lower": 7.2007362842559814,
-               "upper": 7.673068428039551
+               "lower": 8.870546865463258,
+               "upper": 9.316202449798585
             },
             {
                "trajectory": "Infected",
                "timepoint": 10.0,
-               "lower": 8.211344671249389,
-               "upper": 8.764565420150756
+               "lower": 9.952894401550292,
+               "upper": 10.448190259933472
             },
             {
                "trajectory": "Infected",
                "timepoint": 11.0,
-               "lower": 9.359673833847046,
-               "upper": 10.003738260269165
+               "lower": 11.16348671913147,
+               "upper": 11.710074520111084
             },
             {
                "trajectory": "Infected",
                "timepoint": 12.0,
-               "lower": 10.662698650360108,
-               "upper": 11.412926244735718
+               "lower": 12.50561294555664,
+               "upper": 13.12322678565979
             },
             {
                "trajectory": "Infected",
                "timepoint": 13.0,
-               "lower": 12.139265823364259,
-               "upper": 13.034234714508056
+               "lower": 13.989156436920165,
+               "upper": 14.701335287094116
             },
             {
                "trajectory": "Infected",
                "timepoint": 14.0,
-               "lower": 13.818529987335205,
-               "upper": 14.880815649032593
+               "lower": 15.651589107513427,
+               "upper": 16.48354330062866
             },
             {
                "trajectory": "Infected",
                "timepoint": 15.0,
-               "lower": 15.72834882736206,
-               "upper": 16.942227172851563
+               "lower": 17.515068817138673,
+               "upper": 18.47836046218872
             },
             {
                "trajectory": "Infected",
                "timepoint": 16.0,
-               "lower": 17.900688457489014,
-               "upper": 19.289367294311525
+               "lower": 19.565001583099367,
+               "upper": 20.710811424255372
             },
             {
                "trajectory": "Infected",
                "timepoint": 17.0,
-               "lower": 20.387648582458496,
-               "upper": 21.989852046966554
+               "lower": 21.855978393554686,
+               "upper": 23.209658336639404
             },
             {
                "trajectory": "Infected",
                "timepoint": 18.0,
-               "lower": 23.19413995742798,
-               "upper": 25.039627456665038
+               "lower": 24.40241947174072,
+               "upper": 26.0055832862854
             },
             {
                "trajectory": "Infected",
                "timepoint": 19.0,
-               "lower": 26.37776336669922,
-               "upper": 28.54270420074463
+               "lower": 27.24705629348755,
+               "upper": 29.135241413116454
             },
             {
                "trajectory": "Infected",
                "timepoint": 20.0,
-               "lower": 30.013741111755373,
-               "upper": 32.55450992584228
+               "lower": 30.42206802368164,
+               "upper": 32.63927574157715
             },
             {
                "trajectory": "Infected",
                "timepoint": 21.0,
-               "lower": 34.151733016967775,
-               "upper": 37.124450302124025
+               "lower": 33.9476396560669,
+               "upper": 36.55090560913086
             },
             {
                "trajectory": "Infected",
                "timepoint": 22.0,
-               "lower": 38.85995578765869,
-               "upper": 42.31499195098877
+               "lower": 37.88890419006348,
+               "upper": 40.934377098083495
             },
             {
                "trajectory": "Infected",
                "timepoint": 23.0,
-               "lower": 44.216820526123044,
-               "upper": 48.22960605621338
+               "lower": 42.288401222229005,
+               "upper": 45.80188274383545
             },
             {
                "trajectory": "Infected",
                "timepoint": 24.0,
-               "lower": 50.31777496337891,
-               "upper": 54.97193584442139
+               "lower": 47.197360610961915,
+               "upper": 51.27653923034668
             },
             {
                "trajectory": "Infected",
                "timepoint": 25.0,
-               "lower": 57.245130157470705,
-               "upper": 62.68665142059326
+               "lower": 52.67492122650147,
+               "upper": 57.45297679901123
             },
             {
                "trajectory": "Infected",
                "timepoint": 26.0,
-               "lower": 65.1333854675293,
-               "upper": 71.48315963745117
+               "lower": 58.78207378387451,
+               "upper": 64.37256774902343
             },
             {
                "trajectory": "Infected",
                "timepoint": 27.0,
-               "lower": 74.04247932434082,
-               "upper": 81.51323089599609
+               "lower": 65.57045974731446,
+               "upper": 72.12469024658203
             },
             {
                "trajectory": "Infected",
                "timepoint": 28.0,
-               "lower": 84.20646209716797,
-               "upper": 92.99624633789062
+               "lower": 73.14193687438964,
+               "upper": 80.80969200134277
             },
             {
                "trajectory": "Infected",
                "timepoint": 29.0,
-               "lower": 95.7653751373291,
-               "upper": 106.12366027832032
+               "lower": 81.58836631774902,
+               "upper": 90.53988189697266
             },
             {
                "trajectory": "Infected",
                "timepoint": 30.0,
-               "lower": 108.9232666015625,
-               "upper": 121.10384750366211
+               "lower": 91.01480712890626,
+               "upper": 101.44120903015137
             },
             {
                "trajectory": "Infected",
                "timepoint": 31.0,
-               "lower": 123.88895149230957,
-               "upper": 138.19841537475585
+               "lower": 101.59614486694336,
+               "upper": 113.65458602905274
             },
             {
                "trajectory": "Infected",
                "timepoint": 32.0,
-               "lower": 140.91050186157227,
-               "upper": 157.70581436157227
+               "lower": 113.40717163085938,
+               "upper": 127.33801651000977
             },
             {
                "trajectory": "Infected",
                "timepoint": 33.0,
-               "lower": 160.27065734863282,
-               "upper": 179.96659393310546
+               "lower": 126.5909423828125,
+               "upper": 142.64726867675782
             },
             {
                "trajectory": "Infected",
                "timepoint": 34.0,
-               "lower": 182.2905632019043,
-               "upper": 205.35511779785156
+               "lower": 141.30695495605468,
+               "upper": 159.77730178833008
             },
             {
                "trajectory": "Infected",
                "timepoint": 35.0,
-               "lower": 207.3355628967285,
-               "upper": 234.3230194091797
+               "lower": 157.73341445922853,
+               "upper": 178.96406021118165
             },
             {
                "trajectory": "Infected",
                "timepoint": 36.0,
-               "lower": 235.82163162231444,
-               "upper": 267.01853332519534
+               "lower": 176.07011947631835,
+               "upper": 200.45462951660156
             },
             {
                "trajectory": "Infected",
                "timepoint": 37.0,
-               "lower": 267.92577362060547,
-               "upper": 304.1759262084961
+               "lower": 196.53874282836915,
+               "upper": 224.52555770874022
             },
             {
                "trajectory": "Infected",
                "timepoint": 38.0,
-               "lower": 304.5220199584961,
-               "upper": 346.5039566040039
+               "lower": 219.36554412841798,
+               "upper": 251.48682403564453
             },
             {
                "trajectory": "Infected",
                "timepoint": 39.0,
-               "lower": 346.44253997802736,
-               "upper": 394.7213562011719
+               "lower": 244.80390319824218,
+               "upper": 281.6851440429688
             },
             {
                "trajectory": "Infected",
                "timepoint": 40.0,
-               "lower": 394.13358001708986,
-               "upper": 449.6498397827148
+               "lower": 273.1919219970703,
+               "upper": 315.5095733642578
             },
             {
                "trajectory": "Infected",
                "timepoint": 41.0,
-               "lower": 447.85816802978513,
-               "upper": 511.58976898193356
+               "lower": 304.8716537475586,
+               "upper": 353.39541778564455
             },
             {
                "trajectory": "Infected",
                "timepoint": 42.0,
-               "lower": 493.03196716308594,
-               "upper": 563.8122772216797
+               "lower": 340.22495727539064,
+               "upper": 395.8303283691406
             },
             {
                "trajectory": "Infected",
                "timepoint": 43.0,
-               "lower": 535.6669219970703,
-               "upper": 613.1833038330078
+               "lower": 379.67765045166016,
+               "upper": 443.360498046875
             },
             {
                "trajectory": "Infected",
                "timepoint": 44.0,
-               "lower": 578.6635528564453,
-               "upper": 663.2686889648437
+               "lower": 423.70513610839845,
+               "upper": 496.5975799560547
             },
             {
                "trajectory": "Infected",
                "timepoint": 45.0,
-               "lower": 623.8500427246094,
-               "upper": 715.9716247558594
+               "lower": 472.8378540039063,
+               "upper": 556.2245941162109
             },
             {
                "trajectory": "Infected",
                "timepoint": 46.0,
-               "lower": 672.1581939697265,
-               "upper": 772.3864990234375
+               "lower": 527.668423461914,
+               "upper": 622.9911102294922
             },
             {
                "trajectory": "Infected",
                "timepoint": 47.0,
-               "lower": 724.1809387207031,
-               "upper": 833.2218811035156
+               "lower": 588.8553802490235,
+               "upper": 697.7724639892579
             },
             {
                "trajectory": "Infected",
                "timepoint": 48.0,
-               "lower": 780.3581604003906,
-               "upper": 899.0115234374999
+               "lower": 657.1380249023438,
+               "upper": 781.5297027587891
             },
             {
                "trajectory": "Infected",
                "timepoint": 49.0,
-               "lower": 841.06904296875,
-               "upper": 970.2208435058593
+               "lower": 733.3384979248046,
+               "upper": 875.340689086914
             },
             {
                "trajectory": "Infected",
                "timepoint": 50.0,
-               "lower": 906.6824554443359,
-               "upper": 1047.3041870117188
+               "lower": 818.3743133544922,
+               "upper": 980.4104248046875
             },
             {
                "trajectory": "Infected",
                "timepoint": 51.0,
-               "lower": 977.576025390625,
-               "upper": 1130.7272521972657
+               "lower": 913.2702026367188,
+               "upper": 1098.09228515625
             },
             {
                "trajectory": "Infected",
                "timepoint": 52.0,
-               "lower": 1054.1516906738282,
-               "upper": 1220.985125732422
+               "lower": 1019.1690246582032,
+               "upper": 1229.89931640625
             },
             {
                "trajectory": "Infected",
                "timepoint": 53.0,
-               "lower": 1136.8419677734375,
-               "upper": 1318.609521484375
+               "lower": 1137.3476867675781,
+               "upper": 1377.5262268066406
             },
             {
                "trajectory": "Infected",
                "timepoint": 54.0,
-               "lower": 1226.1122802734376,
-               "upper": 1424.177893066406
+               "lower": 1269.2289001464844,
+               "upper": 1542.8712036132813
             },
             {
                "trajectory": "Infected",
                "timepoint": 55.0,
-               "lower": 1322.4703247070313,
-               "upper": 1538.3120849609375
+               "lower": 1416.4017456054687,
+               "upper": 1727.4770385742188
             },
             {
                "trajectory": "Infected",
                "timepoint": 56.0,
-               "lower": 1426.4629943847656,
-               "upper": 1661.6884521484374
+               "lower": 1580.63720703125,
+               "upper": 1934.1150268554688
             },
             {
                "trajectory": "Infected",
                "timepoint": 57.0,
-               "lower": 1538.6837341308594,
-               "upper": 1795.0393005371093
+               "lower": 1763.9153747558594,
+               "upper": 2165.47060546875
             },
             {
                "trajectory": "Infected",
                "timepoint": 58.0,
-               "lower": 1659.7729919433593,
-               "upper": 1939.1570434570312
+               "lower": 1968.4442504882813,
+               "upper": 2424.4970458984376
             },
             {
                "trajectory": "Infected",
                "timepoint": 59.0,
-               "lower": 1790.4226684570312,
-               "upper": 2094.8985595703125
+               "lower": 2196.6836669921877,
+               "upper": 2714.504248046875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 60.0,
+               "lower": 2451.3854736328126,
+               "upper": 3039.194372558594
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 61.0,
+               "lower": 2735.616809082031,
+               "upper": 3402.71767578125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 62.0,
+               "lower": 3052.798059082031,
+               "upper": 3809.7131958007812
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 63.0,
+               "lower": 3406.7495849609377,
+               "upper": 4265.3810546875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 64.0,
+               "lower": 3801.7321533203126,
+               "upper": 4775.535888671875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 65.0,
+               "lower": 4242.50146484375,
+               "upper": 5346.698681640625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 66.0,
+               "lower": 4734.360375976563,
+               "upper": 5986.1514892578125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 67.0,
+               "lower": 5283.23154296875,
+               "upper": 6702.061328125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 68.0,
+               "lower": 5895.716723632812,
+               "upper": 7503.557861328125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 69.0,
+               "lower": 6579.185009765625,
+               "upper": 8400.8701171875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 70.0,
+               "lower": 7341.865087890625,
+               "upper": 9405.44013671875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 71.0,
+               "lower": 8192.910546875,
+               "upper": 10530.088818359374
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 72.0,
+               "lower": 9142.574267578126,
+               "upper": 11789.141552734374
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 73.0,
+               "lower": 10202.26455078125,
+               "upper": 13198.647021484374
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 74.0,
+               "lower": 11384.71142578125,
+               "upper": 14783.098681640624
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 75.0,
+               "lower": 12704.1283203125,
+               "upper": 16566.4771484375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 76.0,
+               "lower": 14176.367236328126,
+               "upper": 18564.829296875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 77.0,
+               "lower": 15819.072705078124,
+               "upper": 20803.97861328125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 78.0,
+               "lower": 17651.98427734375,
+               "upper": 23312.9326171875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 79.0,
+               "lower": 19697.071875,
+               "upper": 26124.10302734375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 80.0,
+               "lower": 21976.61259765625,
+               "upper": 29273.8298828125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 81.0,
+               "lower": 24519.67294921875,
+               "upper": 32802.7369140625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 82.0,
+               "lower": 27356.63212890625,
+               "upper": 36756.3525390625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 83.0,
+               "lower": 30521.37138671875,
+               "upper": 41185.5865234375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 84.0,
+               "lower": 34051.6384765625,
+               "upper": 46147.4583984375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 85.0,
+               "lower": 37989.538671875,
+               "upper": 51705.7177734375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 86.0,
+               "lower": 42381.9109375,
+               "upper": 57931.7224609375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 87.0,
+               "lower": 47281.0287109375,
+               "upper": 64879.1462890625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 88.0,
+               "lower": 52745.012890625,
+               "upper": 72645.875
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 89.0,
+               "lower": 58838.8794921875,
+               "upper": 81338.990234375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 90.0,
+               "lower": 65634.546484375,
+               "upper": 91068.175390625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 91.0,
+               "lower": 73212.451171875,
+               "upper": 101955.815625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 92.0,
+               "lower": 81661.92265625,
+               "upper": 114138.617578125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 93.0,
+               "lower": 91082.460546875,
+               "upper": 127768.637890625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 94.0,
+               "lower": 101584.632421875,
+               "upper": 143016.06953125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 95.0,
+               "lower": 113291.362890625,
+               "upper": 160070.10703125
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 96.0,
+               "lower": 126339.25859375,
+               "upper": 179141.45859375
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 97.0,
+               "lower": 140880.25625,
+               "upper": 200464.8265625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 98.0,
+               "lower": 157084.1296875,
+               "upper": 224300.4390625
+            },
+            {
+               "trajectory": "Infected",
+               "timepoint": 99.0,
+               "lower": 175136.41484375,
+               "upper": 250938.584375
             }
          ],
          "transform": [
@@ -1347,6 +1587,246 @@
                "sample_id": 0,
                "trajectory": "cases",
                "value": 219
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 214
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 214
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 213
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 224
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 204
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 172
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 151
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 152
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 103
+            },
+            {
+               "timepoint": 68,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 140
+            },
+            {
+               "timepoint": 69,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 108
+            },
+            {
+               "timepoint": 70,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 101
+            },
+            {
+               "timepoint": 71,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 99
+            },
+            {
+               "timepoint": 72,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 97
+            },
+            {
+               "timepoint": 73,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 81
+            },
+            {
+               "timepoint": 74,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 75
+            },
+            {
+               "timepoint": 75,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 82
+            },
+            {
+               "timepoint": 76,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 63
+            },
+            {
+               "timepoint": 77,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 47
+            },
+            {
+               "timepoint": 78,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 45
+            },
+            {
+               "timepoint": 79,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 53
+            },
+            {
+               "timepoint": 80,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 54
+            },
+            {
+               "timepoint": 81,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 50
+            },
+            {
+               "timepoint": 82,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 49
+            },
+            {
+               "timepoint": 83,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 37
+            },
+            {
+               "timepoint": 84,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 35
+            },
+            {
+               "timepoint": 85,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 26
+            },
+            {
+               "timepoint": 86,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 30
+            },
+            {
+               "timepoint": 87,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 31
+            },
+            {
+               "timepoint": 88,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 24
+            },
+            {
+               "timepoint": 89,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 24
+            },
+            {
+               "timepoint": 90,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 19
+            },
+            {
+               "timepoint": 91,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 26
+            },
+            {
+               "timepoint": 92,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 21
+            },
+            {
+               "timepoint": 93,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 17
+            },
+            {
+               "timepoint": 94,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 16
+            },
+            {
+               "timepoint": 95,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 13
+            },
+            {
+               "timepoint": 96,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 14
+            },
+            {
+               "timepoint": 97,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 15
+            },
+            {
+               "timepoint": 98,
+               "sample_id": 0,
+               "trajectory": "cases",
+               "value": 10
             }
          ]
       },
