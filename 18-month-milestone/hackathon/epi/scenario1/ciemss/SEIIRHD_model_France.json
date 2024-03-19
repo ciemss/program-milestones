@@ -280,7 +280,7 @@
      {
        "target": "E",
        "expression": "0.0000000000000",
-       "expression_mathml": "<cn>40.0</cn>"
+       "expression_mathml": "<cn>0.0</cn>"
      },
      {
        "target": "R",
