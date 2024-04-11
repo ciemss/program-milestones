@@ -1286,6 +1286,18 @@
      "name": "deceased",
      "expression": "D_m + D_o + D_y",
      "expression_mathml": "<apply><plus/><ci>D_m</ci><ci>D_o</ci><ci>D_y</ci></apply>"
+    },
+    {
+     "id": "all_cases",
+     "name": "all_cases",
+     "expression": "Cumulative_cases",
+     "expression_mathml": "<ci>Cumulative_cases</ci>"
+    },
+    {
+     "id": "all_hosp",
+     "name": "all_hosp",
+     "expression": "Cumulative_hosp",
+     "expression_mathml": "<ci>Cumulative_hosp</ci>"
     }
    ],
    "time": {

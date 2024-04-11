@@ -864,8 +864,8 @@
    "initials": [
     {
      "target": "S_u",
-     "expression": "7433768.554",
-     "expression_mathml": "<cn>7433768.5540000005</cn>"
+     "expression": "6788949.3",
+     "expression_mathml": "<cn>6788949.3000000007</cn>"
     },
     {
      "target": "I_u_alpha",
@@ -879,8 +879,8 @@
     },
     {
      "target": "S_v",
-     "expression": "10471212.409",
-     "expression_mathml": "<cn>10471212.409</cn>"
+     "expression": "10724379.7",
+     "expression_mathml": "<cn>10724379.699999999</cn>"
     },
     {
      "target": "E_v_alpha",
@@ -1237,6 +1237,18 @@
      "name": "deceased",
      "expression": "D_u + D_v",
      "expression_mathml": "<apply><plus/><ci>D_u</ci><ci>D_v</ci></apply>"
+    },
+    {
+     "id": "all_cases",
+     "name": "all_cases",
+     "expression": "Cumulative_cases",
+     "expression_mathml": "<ci>Cumulative_cases</ci>"
+    },
+    {
+     "id": "all_hosp",
+     "name": "all_hosp",
+     "expression": "Cumulative_hosp",
+     "expression_mathml": "<ci>Cumulative_hosp</ci>"
     }
    ],
    "time": {
