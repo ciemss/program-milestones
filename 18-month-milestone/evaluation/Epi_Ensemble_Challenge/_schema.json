@@ -1,0 +1,2074 @@
+{
+   "$schema": "https://vega.github.io/schema/vega/v5.json",
+   "width": 500,
+   "height": 300,
+   "scales": [
+      {
+         "name": "xscale",
+         "type": "linear",
+         "range": "width",
+         "zero": false,
+         "domain": {
+            "fields": [
+               {
+                  "data": "distributions",
+                  "field": "timepoint"
+               },
+               {
+                  "data": "traces",
+                  "field": "timepoint"
+               },
+               {
+                  "data": "points",
+                  "field": "timepoint"
+               }
+            ]
+         }
+      },
+      {
+         "name": "yscale",
+         "type": "linear",
+         "range": "height",
+         "nice": true,
+         "zero": true,
+         "domain": {
+            "fields": [
+               {
+                  "data": "distributions",
+                  "field": "lower"
+               },
+               {
+                  "data": "distributions",
+                  "field": "upper"
+               },
+               {
+                  "data": "traces",
+                  "field": "value"
+               },
+               {
+                  "data": "points",
+                  "field": "value"
+               }
+            ]
+         }
+      },
+      {
+         "name": "color",
+         "type": "ordinal",
+         "range": "category",
+         "domain": {
+            "fields": [
+               {
+                  "data": "distributions",
+                  "field": "trajectory"
+               },
+               {
+                  "data": "traces",
+                  "field": "trajectory"
+               },
+               {
+                  "data": "points",
+                  "field": "trajectory"
+               }
+            ],
+            "sort": {
+               "order": "ascending"
+            }
+         }
+      }
+   ],
+   "axes": [
+      {
+         "name": "x_axis",
+         "orient": "bottom",
+         "scale": "xscale",
+         "zindex": 100
+      },
+      {
+         "name": "y_axis",
+         "orient": "left",
+         "scale": "yscale",
+         "zindex": 100
+      }
+   ],
+   "signals": [
+      {
+         "name": "clear",
+         "value": true,
+         "on": [
+            {
+               "events": "mouseup[!event.item]",
+               "update": "true",
+               "force": true
+            }
+         ]
+      },
+      {
+         "name": "shift",
+         "value": false,
+         "on": [
+            {
+               "events": "@legendSymbol:click, @legendLabel:click",
+               "update": "event.shiftKey",
+               "force": true
+            }
+         ]
+      },
+      {
+         "name": "clicked",
+         "value": null,
+         "on": [
+            {
+               "events": "@legendSymbol:click, @legendLabel:click",
+               "update": "{value: datum.value}",
+               "force": true
+            }
+         ]
+      },
+      {
+         "name": "clearData",
+         "value": true,
+         "on": [
+            {
+               "events": "mouseup[!event.item]",
+               "update": "true",
+               "force": true
+            }
+         ]
+      },
+      {
+         "name": "clickedData",
+         "value": null,
+         "on": [
+            {
+               "events": "@area:click",
+               "update": "{value: datum.trajectory}",
+               "force": true
+            }
+         ]
+      }
+   ],
+   "legends": [
+      {
+         "name": "color_legend",
+         "stroke": "color",
+         "encode": {
+            "symbols": {
+               "name": "legendSymbol",
+               "interactive": true,
+               "update": {
+                  "fill": {
+                     "value": "transparent"
+                  },
+                  "strokeWidth": {
+                     "value": 2
+                  },
+                  "opacity": [
+                     {
+                        "test": "!length(data('selected')) || indata('selected', 'value', datum.value) || indata('selectedData', 'value', datum.value)",
+                        "value": 0.7
+                     },
+                     {
+                        "value": 0.15
+                     }
+                  ],
+                  "size": {
+                     "value": 64
+                  }
+               }
+            },
+            "labels": {
+               "name": "legendLabel",
+               "interactive": true,
+               "update": {
+                  "opacity": [
+                     {
+                        "test": "!length(data('selectedData')) || indata('selectedData', 'value', datum.value)",
+                        "value": 1
+                     },
+                     {
+                        "value": 0.25
+                     }
+                  ]
+               }
+            }
+         }
+      }
+   ],
+   "marks": [
+      {
+         "type": "group",
+         "zindex": 3,
+         "name": "_points",
+         "from": {
+            "facet": {
+               "name": "points_split",
+               "data": "points",
+               "groupby": "trajectory"
+            }
+         },
+         "marks": [
+            {
+               "type": "symbol",
+               "name": "_points_symbol",
+               "from": {
+                  "data": "points_split"
+               },
+               "zindex": 3,
+               "encode": {
+                  "update": {
+                     "x": {
+                        "scale": "xscale",
+                        "field": "timepoint"
+                     },
+                     "y": {
+                        "scale": "yscale",
+                        "field": "value"
+                     },
+                     "size": {
+                        "value": 35
+                     },
+                     "strokeWidth": {
+                        "value": 2
+                     },
+                     "fill": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "stroke": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "fillOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.5
+                        },
+                        {
+                           "value": 0.15
+                        }
+                     ],
+                     "strokeOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.75
+                        },
+                        {
+                           "value": 0.15
+                        }
+                     ],
+                     "tooltip": {
+                        "field": "value"
+                     }
+                  },
+                  "hover": {
+                     "fillOpacity": {
+                        "value": 0.9
+                     }
+                  }
+               }
+            },
+            {
+               "type": "line",
+               "name": "_points_line",
+               "from": {
+                  "data": "points_split"
+               },
+               "zindex": 3,
+               "encode": {
+                  "update": {
+                     "x": {
+                        "scale": "xscale",
+                        "field": "timepoint"
+                     },
+                     "y": {
+                        "scale": "yscale",
+                        "field": "value"
+                     },
+                     "strokeWidth": {
+                        "value": 2
+                     },
+                     "stroke": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "interpolate": {
+                        "value": "linear"
+                     },
+                     "strokeDash": {
+                        "value": [
+                           5,
+                           3
+                        ]
+                     },
+                     "strokeOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.3
+                        },
+                        {
+                           "value": 0.1
+                        }
+                     ]
+                  },
+                  "hover": {
+                     "fillOpacity": {
+                        "value": 0.9
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "type": "group",
+         "zindex": 2,
+         "name": "_traces",
+         "from": {
+            "facet": {
+               "name": "traces_split",
+               "data": "traces",
+               "groupby": "trajectory"
+            }
+         },
+         "marks": [
+            {
+               "type": "line",
+               "name": "_traces_lines",
+               "from": {
+                  "data": "traces_split"
+               },
+               "encode": {
+                  "update": {
+                     "x": {
+                        "scale": "xscale",
+                        "field": "timepoint"
+                     },
+                     "y": {
+                        "scale": "yscale",
+                        "field": "value"
+                     },
+                     "strokeWidth": {
+                        "value": 2
+                     },
+                     "stroke": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "interpolate": {
+                        "value": "linear"
+                     },
+                     "strokeOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.75
+                        },
+                        {
+                           "value": 0.15
+                        }
+                     ]
+                  },
+                  "hover": {
+                     "fillOpacity": {
+                        "value": 0.9
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "type": "group",
+         "name": "_distributions",
+         "zindex": 1,
+         "from": {
+            "facet": {
+               "name": "trajectory_split",
+               "data": "distributions",
+               "groupby": "trajectory"
+            }
+         },
+         "marks": [
+            {
+               "type": "area",
+               "name": "area",
+               "interactive": true,
+               "from": {
+                  "data": "trajectory_split"
+               },
+               "encode": {
+                  "update": {
+                     "x": {
+                        "scale": "xscale",
+                        "field": "timepoint"
+                     },
+                     "y": {
+                        "scale": "yscale",
+                        "field": "upper"
+                     },
+                     "y2": {
+                        "scale": "yscale",
+                        "field": "lower"
+                     },
+                     "interpolate": {
+                        "value": "linear"
+                     },
+                     "strokeWidth": {
+                        "value": 2
+                     },
+                     "fill": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "stroke": {
+                        "scale": "color",
+                        "field": "trajectory"
+                     },
+                     "fillOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.5
+                        },
+                        {
+                           "value": 0.15
+                        }
+                     ],
+                     "strokeOpacity": [
+                        {
+                           "test": "!length(data('selected')) || indata('selected', 'value', datum.trajectory)",
+                           "value": 0.75
+                        },
+                        {
+                           "value": 0.15
+                        }
+                     ]
+                  },
+                  "hover": {
+                     "fillOpacity": {
+                        "value": 0.9
+                     }
+                  }
+               }
+            }
+         ]
+      },
+      {
+         "type": "group",
+         "name": "_markers_v",
+         "marks": [
+            {
+               "type": "rule",
+               "name": "_marker_v text",
+               "from": {
+                  "data": "markers_v"
+               },
+               "encode": {
+                  "enter": {
+                     "stroke": {
+                        "value": "lightgray"
+                     }
+                  },
+                  "update": {
+                     "x": {
+                        "scale": "xscale",
+                        "field": "axis_value"
+                     },
+                     "y2": {
+                        "value": 0
+                     },
+                     "y": {
+                        "signal": "height"
+                     },
+                     "opacity": {
+                        "value": 1
+                     }
+                  }
+               }
+            },
+            {
+               "type": "text",
+               "name": "_marker_v flags",
+               "from": {
+                  "data": "_marker_v text"
+               },
+               "encode": {
+                  "enter": {
+                     "text": {
+                        "field": "datum.label"
+                     },
+                     "y": {
+                        "value": 0
+                     },
+                     "fontSize": {
+                        "value": 8
+                     }
+                  }
+               },
+               "transform": [
+                  {
+                     "type": "label",
+                     "lineAnchor": "start",
+                     "as": [
+                        "x",
+                        "_y",
+                        "opacity",
+                        "align",
+                        "baseline"
+                     ],
+                     "offset": [
+                        1
+                     ],
+                     "size": {
+                        "signal": "[width, height]"
+                     }
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "type": "group",
+         "name": "_markers_h",
+         "marks": [
+            {
+               "type": "rule",
+               "name": "_marker_h text",
+               "from": {
+                  "data": "markers_h"
+               },
+               "encode": {
+                  "enter": {
+                     "stroke": {
+                        "value": "lightgray"
+                     }
+                  },
+                  "update": {
+                     "y": {
+                        "scale": "yscale",
+                        "field": "axis_value"
+                     },
+                     "x2": {
+                        "value": 0
+                     },
+                     "x": {
+                        "signal": "width"
+                     },
+                     "opacity": {
+                        "value": 1
+                     }
+                  }
+               }
+            },
+            {
+               "type": "text",
+               "name": "_marker_h flags",
+               "from": {
+                  "data": "_marker_h text"
+               },
+               "encode": {
+                  "enter": {
+                     "text": {
+                        "field": "datum.label"
+                     },
+                     "x": {
+                        "signal": "width+20"
+                     },
+                     "fontSize": {
+                        "value": 8
+                     }
+                  }
+               },
+               "transform": [
+                  {
+                     "type": "label",
+                     "lineAnchor": "start",
+                     "as": [
+                        "_x",
+                        "y",
+                        "opacity",
+                        "align",
+                        "baseline"
+                     ],
+                     "offset": [
+                        1
+                     ],
+                     "size": {
+                        "signal": "[width, height]"
+                     }
+                  }
+               ]
+            }
+         ]
+      }
+   ],
+   "data": [
+      {
+         "name": "distributions",
+         "values": [
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 10.0,
+               "lower": 2108182.8375,
+               "upper": 2111586.225
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 20.0,
+               "lower": 2113324.9625,
+               "upper": 2121032.675
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 30.0,
+               "lower": 2117496.6625,
+               "upper": 2132578.5
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 40.0,
+               "lower": 2121059.0375,
+               "upper": 2147696.1125
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 50.0,
+               "lower": 2123899.175,
+               "upper": 2165798.5375
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 60.0,
+               "lower": 2126089.75,
+               "upper": 2187821.4625
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 70.0,
+               "lower": 2127793.375,
+               "upper": 2210480.175
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 80.0,
+               "lower": 2129021.7125,
+               "upper": 2238849.65
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 90.0,
+               "lower": 2130015.4875,
+               "upper": 2280262.95
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 10.0,
+               "lower": 137260.18828125,
+               "upper": 137637.428125
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 20.0,
+               "lower": 137626.30859375,
+               "upper": 138361.46796875
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 30.0,
+               "lower": 137972.71640625,
+               "upper": 139169.46953125
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 40.0,
+               "lower": 138336.584375,
+               "upper": 140175.4359375
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 50.0,
+               "lower": 138712.08984375,
+               "upper": 141475.946875
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 60.0,
+               "lower": 139082.68125,
+               "upper": 143071.50078125
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 70.0,
+               "lower": 139249.44921875,
+               "upper": 145057.25078125
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 80.0,
+               "lower": 139393.590625,
+               "upper": 147458.46171874998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 90.0,
+               "lower": 139481.7171875,
+               "upper": 150390.22265625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 10.0,
+               "lower": 53166.76328125,
+               "upper": 53200.3107421875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 20.0,
+               "lower": 53196.8296875,
+               "upper": 53263.4591796875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 30.0,
+               "lower": 53225.0603515625,
+               "upper": 53320.9625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 40.0,
+               "lower": 53252.28359375,
+               "upper": 53383.821484375
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 50.0,
+               "lower": 53274.72265625,
+               "upper": 53469.66171875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 60.0,
+               "lower": 53295.28671875,
+               "upper": 53590.2130859375
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 70.0,
+               "lower": 53314.910546875,
+               "upper": 53735.160546875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 80.0,
+               "lower": 53333.490625,
+               "upper": 53858.76875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 90.0,
+               "lower": 53349.1859375,
+               "upper": 53986.915625
+            }
+         ],
+         "transform": [
+            {
+               "type": "collect",
+               "sort": {
+                  "field": [
+                     "trajectory",
+                     "timepoint"
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "name": "traces",
+         "values": [],
+         "transform": [
+            {
+               "type": "filter",
+               "expr": "isValid(datum.value)"
+            },
+            {
+               "type": "collect",
+               "sort": {
+                  "field": [
+                     "trajectory",
+                     "timepoint"
+                  ]
+               }
+            }
+         ]
+      },
+      {
+         "name": "points",
+         "values": [
+            {
+               "timepoint": 0,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2102869.0
+            },
+            {
+               "timepoint": 1,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2103269.0
+            },
+            {
+               "timepoint": 2,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2103768.0
+            },
+            {
+               "timepoint": 3,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2104539.0
+            },
+            {
+               "timepoint": 4,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2105375.0
+            },
+            {
+               "timepoint": 5,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2105882.0
+            },
+            {
+               "timepoint": 6,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2106399.0
+            },
+            {
+               "timepoint": 7,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2106852.0
+            },
+            {
+               "timepoint": 8,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2107289.0
+            },
+            {
+               "timepoint": 9,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2107831.0
+            },
+            {
+               "timepoint": 10,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2108510.0
+            },
+            {
+               "timepoint": 11,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2108950.0
+            },
+            {
+               "timepoint": 12,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2109313.0
+            },
+            {
+               "timepoint": 13,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2109677.0
+            },
+            {
+               "timepoint": 14,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2110004.0
+            },
+            {
+               "timepoint": 15,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2110310.0
+            },
+            {
+               "timepoint": 16,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2110756.0
+            },
+            {
+               "timepoint": 17,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2111162.0
+            },
+            {
+               "timepoint": 18,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2111556.0
+            },
+            {
+               "timepoint": 19,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2111845.0
+            },
+            {
+               "timepoint": 20,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2112129.0
+            },
+            {
+               "timepoint": 21,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2112388.0
+            },
+            {
+               "timepoint": 22,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2112649.0
+            },
+            {
+               "timepoint": 23,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2113046.0
+            },
+            {
+               "timepoint": 24,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2113398.0
+            },
+            {
+               "timepoint": 25,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2113742.0
+            },
+            {
+               "timepoint": 26,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2114123.0
+            },
+            {
+               "timepoint": 27,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2114434.0
+            },
+            {
+               "timepoint": 28,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2114686.0
+            },
+            {
+               "timepoint": 29,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2114986.0
+            },
+            {
+               "timepoint": 30,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2115377.0
+            },
+            {
+               "timepoint": 31,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2115880.0
+            },
+            {
+               "timepoint": 32,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2116166.0
+            },
+            {
+               "timepoint": 33,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2116516.0
+            },
+            {
+               "timepoint": 34,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2116888.0
+            },
+            {
+               "timepoint": 35,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2117186.0
+            },
+            {
+               "timepoint": 36,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2117549.0
+            },
+            {
+               "timepoint": 37,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2118216.0
+            },
+            {
+               "timepoint": 38,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2118960.0
+            },
+            {
+               "timepoint": 39,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2119692.0
+            },
+            {
+               "timepoint": 40,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2120486.0
+            },
+            {
+               "timepoint": 41,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2121119.0
+            },
+            {
+               "timepoint": 42,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2121761.0
+            },
+            {
+               "timepoint": 43,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2122502.0
+            },
+            {
+               "timepoint": 44,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2123452.0
+            },
+            {
+               "timepoint": 45,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2124168.0
+            },
+            {
+               "timepoint": 46,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2125535.0
+            },
+            {
+               "timepoint": 47,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2126680.0
+            },
+            {
+               "timepoint": 48,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2127592.0
+            },
+            {
+               "timepoint": 49,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2128710.0
+            },
+            {
+               "timepoint": 50,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2129897.0
+            },
+            {
+               "timepoint": 51,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2131535.0
+            },
+            {
+               "timepoint": 52,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2133264.0
+            },
+            {
+               "timepoint": 53,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2135161.0
+            },
+            {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2136032.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2138643.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2140258.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2142132.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2144741.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2147318.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2150390.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2152964.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2155356.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2158388.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2161314.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2164850.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2168589.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2173080.0
+            },
+            {
+               "timepoint": 0,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 136862.0
+            },
+            {
+               "timepoint": 1,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 136968.0
+            },
+            {
+               "timepoint": 2,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137089.0
+            },
+            {
+               "timepoint": 3,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137179.0
+            },
+            {
+               "timepoint": 4,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137249.0
+            },
+            {
+               "timepoint": 5,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137328.0
+            },
+            {
+               "timepoint": 6,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137422.0
+            },
+            {
+               "timepoint": 7,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137534.0
+            },
+            {
+               "timepoint": 8,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137614.0
+            },
+            {
+               "timepoint": 9,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137709.0
+            },
+            {
+               "timepoint": 10,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137788.0
+            },
+            {
+               "timepoint": 11,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137837.0
+            },
+            {
+               "timepoint": 12,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 137923.0
+            },
+            {
+               "timepoint": 13,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138001.0
+            },
+            {
+               "timepoint": 14,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138068.0
+            },
+            {
+               "timepoint": 15,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138133.0
+            },
+            {
+               "timepoint": 16,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138205.0
+            },
+            {
+               "timepoint": 17,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138254.0
+            },
+            {
+               "timepoint": 18,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138308.0
+            },
+            {
+               "timepoint": 19,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138374.0
+            },
+            {
+               "timepoint": 20,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138442.0
+            },
+            {
+               "timepoint": 21,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138503.0
+            },
+            {
+               "timepoint": 22,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138573.0
+            },
+            {
+               "timepoint": 23,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138628.0
+            },
+            {
+               "timepoint": 24,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138671.0
+            },
+            {
+               "timepoint": 25,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138724.0
+            },
+            {
+               "timepoint": 26,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138774.0
+            },
+            {
+               "timepoint": 27,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138834.0
+            },
+            {
+               "timepoint": 28,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138892.0
+            },
+            {
+               "timepoint": 29,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138943.0
+            },
+            {
+               "timepoint": 30,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 138998.0
+            },
+            {
+               "timepoint": 31,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139056.0
+            },
+            {
+               "timepoint": 32,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139102.0
+            },
+            {
+               "timepoint": 33,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139159.0
+            },
+            {
+               "timepoint": 34,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139220.0
+            },
+            {
+               "timepoint": 35,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139286.0
+            },
+            {
+               "timepoint": 36,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139335.0
+            },
+            {
+               "timepoint": 37,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139386.0
+            },
+            {
+               "timepoint": 38,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139438.0
+            },
+            {
+               "timepoint": 39,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139486.0
+            },
+            {
+               "timepoint": 40,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139543.0
+            },
+            {
+               "timepoint": 41,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139597.0
+            },
+            {
+               "timepoint": 42,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139655.0
+            },
+            {
+               "timepoint": 43,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139743.0
+            },
+            {
+               "timepoint": 44,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139819.0
+            },
+            {
+               "timepoint": 45,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139883.0
+            },
+            {
+               "timepoint": 46,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 139954.0
+            },
+            {
+               "timepoint": 47,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140025.0
+            },
+            {
+               "timepoint": 48,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140118.0
+            },
+            {
+               "timepoint": 49,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140217.0
+            },
+            {
+               "timepoint": 50,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140330.0
+            },
+            {
+               "timepoint": 51,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140407.0
+            },
+            {
+               "timepoint": 52,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140505.0
+            },
+            {
+               "timepoint": 53,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140590.0
+            },
+            {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140685.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140793.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140914.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141048.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141180.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141316.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141439.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141577.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141738.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141948.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142158.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142359.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142603.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142792.0
+            },
+            {
+               "timepoint": 0,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53123.0
+            },
+            {
+               "timepoint": 1,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53132.0
+            },
+            {
+               "timepoint": 2,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53151.0
+            },
+            {
+               "timepoint": 3,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53207.0
+            },
+            {
+               "timepoint": 4,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53221.0
+            },
+            {
+               "timepoint": 5,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53254.0
+            },
+            {
+               "timepoint": 6,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53265.0
+            },
+            {
+               "timepoint": 7,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53275.0
+            },
+            {
+               "timepoint": 8,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53283.0
+            },
+            {
+               "timepoint": 9,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53296.0
+            },
+            {
+               "timepoint": 10,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53313.0
+            },
+            {
+               "timepoint": 11,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53330.0
+            },
+            {
+               "timepoint": 12,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53340.0
+            },
+            {
+               "timepoint": 13,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53349.0
+            },
+            {
+               "timepoint": 14,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53365.0
+            },
+            {
+               "timepoint": 15,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53367.0
+            },
+            {
+               "timepoint": 16,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53380.0
+            },
+            {
+               "timepoint": 17,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53388.0
+            },
+            {
+               "timepoint": 18,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53395.0
+            },
+            {
+               "timepoint": 19,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53397.0
+            },
+            {
+               "timepoint": 20,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53405.0
+            },
+            {
+               "timepoint": 21,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53423.0
+            },
+            {
+               "timepoint": 22,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53430.0
+            },
+            {
+               "timepoint": 23,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53426.0
+            },
+            {
+               "timepoint": 24,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53435.0
+            },
+            {
+               "timepoint": 25,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53440.0
+            },
+            {
+               "timepoint": 26,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53455.0
+            },
+            {
+               "timepoint": 27,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53463.0
+            },
+            {
+               "timepoint": 28,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53467.0
+            },
+            {
+               "timepoint": 29,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53470.0
+            },
+            {
+               "timepoint": 30,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53481.0
+            },
+            {
+               "timepoint": 31,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53483.0
+            },
+            {
+               "timepoint": 32,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53483.0
+            },
+            {
+               "timepoint": 33,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53492.0
+            },
+            {
+               "timepoint": 34,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53496.0
+            },
+            {
+               "timepoint": 35,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53502.0
+            },
+            {
+               "timepoint": 36,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53508.0
+            },
+            {
+               "timepoint": 37,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53512.0
+            },
+            {
+               "timepoint": 38,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53517.0
+            },
+            {
+               "timepoint": 39,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53524.0
+            },
+            {
+               "timepoint": 40,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53526.0
+            },
+            {
+               "timepoint": 41,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53528.0
+            },
+            {
+               "timepoint": 42,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53534.0
+            },
+            {
+               "timepoint": 43,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53545.0
+            },
+            {
+               "timepoint": 44,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53550.0
+            },
+            {
+               "timepoint": 45,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53551.0
+            },
+            {
+               "timepoint": 46,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53556.0
+            },
+            {
+               "timepoint": 47,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53566.0
+            },
+            {
+               "timepoint": 48,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53570.0
+            },
+            {
+               "timepoint": 49,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53574.0
+            },
+            {
+               "timepoint": 50,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53581.0
+            },
+            {
+               "timepoint": 51,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53588.0
+            },
+            {
+               "timepoint": 52,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53591.0
+            },
+            {
+               "timepoint": 53,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53594.0
+            },
+            {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53603.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53610.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53611.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53623.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53625.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53632.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53641.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53650.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53657.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53670.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53676.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53691.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53694.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53729.0
+            }
+         ]
+      },
+      {
+         "name": "markers_v",
+         "values": []
+      },
+      {
+         "name": "markers_h",
+         "values": []
+      },
+      {
+         "name": "selected",
+         "on": [
+            {
+               "trigger": "clear",
+               "remove": true
+            },
+            {
+               "trigger": "!shift",
+               "remove": true
+            },
+            {
+               "trigger": "!shift && clicked",
+               "insert": "clicked"
+            },
+            {
+               "trigger": "shift && clicked",
+               "toggle": "clicked"
+            }
+         ]
+      },
+      {
+         "name": "selectedData",
+         "on": [
+            {
+               "trigger": "clearData",
+               "remove": true
+            },
+            {
+               "trigger": "clickedData",
+               "toggle": "clickedData"
+            }
+         ]
+      }
+   ]
+}

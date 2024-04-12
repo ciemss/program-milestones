@@ -981,12 +981,12 @@
     },
     {
      "id": "beta",
-     "value": 0.2,
+     "value": 0.0005,
      "distribution": {
       "type": "StandardUniform1",
       "parameters": {
-       "minimum": 0.05,
-       "maximum": 0.8
+       "minimum": 0.0001,
+       "maximum": 0.001
       }
      },
      "units": {
