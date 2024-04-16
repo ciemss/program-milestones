@@ -118,6 +118,42 @@
      "expression": "person",
      "expression_mathml": "<ci>person</ci>"
     }
+   },
+   {
+    "id": "Incident_cases",
+    "name": "Incident_cases",
+    "grounding": {
+     "identifiers": {},
+     "modifiers": {}
+    },
+    "units": {
+     "expression": "person",
+     "expression_mathml": "<ci>person</ci>"
+    }
+   },
+   {
+    "id": "Incident_hosp",
+    "name": "Incident_hosp",
+    "grounding": {
+     "identifiers": {},
+     "modifiers": {}
+    },
+    "units": {
+     "expression": "person",
+     "expression_mathml": "<ci>person</ci>"
+    }
+   },
+   {
+    "id": "Incident_deaths",
+    "name": "Incident_deaths",
+    "grounding": {
+     "identifiers": {},
+     "modifiers": {}
+    },
+    "units": {
+     "expression": "person",
+     "expression_mathml": "<ci>person</ci>"
+    }
    }
   ],
   "transitions": [
@@ -220,6 +256,75 @@
     "properties": {
      "name": "t8"
     }
+   },
+   {
+    "id": "t9",
+    "input": [
+     "Incident_cases"
+    ],
+    "output": [],
+    "properties": {
+     "name": "t9"
+    }
+   },
+   {
+    "id": "t10",
+    "input": [
+     "Incident_hosp"
+    ],
+    "output": [],
+    "properties": {
+     "name": "t10"
+    }
+   },
+   {
+    "id": "t11",
+    "input": [
+     "Incident_deaths"
+    ],
+    "output": [],
+    "properties": {
+     "name": "t11"
+    }
+   },
+   {
+    "id": "t12",
+    "input": [
+     "E"
+    ],
+    "output": [
+     "E",
+     "Incident_cases"
+    ],
+    "properties": {
+     "name": "t12"
+    }
+   },
+   {
+    "id": "t13",
+    "input": [
+     "I"
+    ],
+    "output": [
+     "I",
+     "Incident_hosp"
+    ],
+    "properties": {
+     "name": "t13"
+    }
+   },
+   {
+    "id": "t14",
+    "input": [
+     "H"
+    ],
+    "output": [
+     "H",
+     "Incident_deaths"
+    ],
+    "properties": {
+     "name": "t14"
+    }
    }
   ]
  },
@@ -265,18 +370,48 @@
      "target": "t8",
      "expression": "I*p_IH*r_IR",
      "expression_mathml": "<apply><times/><ci>I</ci><ci>p_IH</ci><ci>r_IR</ci></apply>"
+    },
+    {
+     "target": "t9",
+     "expression": "Incident_cases",
+     "expression_mathml": "<ci>Incident_cases</ci>"
+    },
+    {
+     "target": "t10",
+     "expression": "Incident_hosp",
+     "expression_mathml": "<ci>Incident_hosp</ci>"
+    },
+    {
+     "target": "t11",
+     "expression": "Incident_deaths",
+     "expression_mathml": "<ci>Incident_deaths</ci>"
+    },
+    {
+     "target": "t12",
+     "expression": "E*r_EI",
+     "expression_mathml": "<apply><times/><ci>E</ci><ci>r_EI</ci></apply>"
+    },
+    {
+     "target": "t13",
+     "expression": "I*p_IH*r_IR",
+     "expression_mathml": "<apply><times/><ci>I</ci><ci>p_IH</ci><ci>r_IR</ci></apply>"
+    },
+    {
+     "target": "t14",
+     "expression": "H*p_HD*r_HR",
+     "expression_mathml": "<apply><times/><ci>H</ci><ci>p_HD</ci><ci>r_HR</ci></apply>"
     }
    ],
    "initials": [
     {
      "target": "S",
-     "expression": "17513329.0",
-     "expression_mathml": "<cn>17513329.0</cn>"
+     "expression": "17517329.0 - I0",
+     "expression_mathml": "<apply><minus/><cn>17517329.0</cn><ci>I0</ci></apply>"
     },
     {
      "target": "I",
-     "expression": "4000.0",
-     "expression_mathml": "<cn>4000.0</cn>"
+     "expression": "I0",
+     "expression_mathml": "<ci>I0</ci>"
     },
     {
      "target": "E",
@@ -307,6 +442,21 @@
      "target": "Cumulative_hosp",
      "expression": "136862.0",
      "expression_mathml": "<cn>136862.0</cn>"
+    },
+    {
+     "target": "Incident_cases",
+     "expression": "465.0",
+     "expression_mathml": "<cn>465.0</cn>"
+    },
+    {
+     "target": "Incident_hosp",
+     "expression": "113.0",
+     "expression_mathml": "<cn>113.0</cn>"
+    },
+    {
+     "target": "Incident_deaths",
+     "expression": "25.0",
+     "expression_mathml": "<cn>25.0</cn>"
     }
    ],
    "parameters": [
@@ -407,56 +557,85 @@
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
      }
+    },
+    {
+     "id": "I0",
+     "value": 4000.0,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 3600.0,
+       "maximum": 4400.0
+      }
+     }
     }
    ],
    "observables": [
     {
      "id": "susceptible",
      "name": "susceptible",
-     "expression": "S",
-     "expression_mathml": "<ci>S</ci>"
+     "expression": "S_m + S_o + S_y",
+     "expression_mathml": "<apply><plus/><ci>S_m</ci><ci>S_o</ci><ci>S_y</ci></apply>"
     },
     {
      "id": "exposed",
      "name": "exposed",
-     "expression": "E",
-     "expression_mathml": "<ci>E</ci>"
+     "expression": "E_m + E_o + E_y",
+     "expression_mathml": "<apply><plus/><ci>E_m</ci><ci>E_o</ci><ci>E_y</ci></apply>"
     },
     {
      "id": "infected",
      "name": "infected",
-     "expression": "I",
-     "expression_mathml": "<ci>I</ci>"
+     "expression": "I_m + I_o + I_y",
+     "expression_mathml": "<apply><plus/><ci>I_m</ci><ci>I_o</ci><ci>I_y</ci></apply>"
     },
     {
      "id": "recovered",
      "name": "recovered",
-     "expression": "R",
-     "expression_mathml": "<ci>R</ci>"
+     "expression": "R_m + R_o + R_y",
+     "expression_mathml": "<apply><plus/><ci>R_m</ci><ci>R_o</ci><ci>R_y</ci></apply>"
     },
     {
      "id": "hospitalized",
      "name": "hospitalized",
-     "expression": "H",
-     "expression_mathml": "<ci>H</ci>"
+     "expression": "H_m + H_o + H_y",
+     "expression_mathml": "<apply><plus/><ci>H_m</ci><ci>H_o</ci><ci>H_y</ci></apply>"
     },
     {
      "id": "deceased",
      "name": "deceased",
-     "expression": "D",
-     "expression_mathml": "<ci>D</ci>"
+     "expression": "D_m + D_o + D_y",
+     "expression_mathml": "<apply><plus/><ci>D_m</ci><ci>D_o</ci><ci>D_y</ci></apply>"
     },
     {
-     "id": "all_cases",
-     "name": "all_cases",
+     "id": "cumulative_cases",
+     "name": "cumulative_cases",
      "expression": "Cumulative_cases",
      "expression_mathml": "<ci>Cumulative_cases</ci>"
     },
     {
-     "id": "all_hosp",
-     "name": "all_hosp",
+     "id": "cumulative_hosp",
+     "name": "cumulative_hosp",
      "expression": "Cumulative_hosp",
      "expression_mathml": "<ci>Cumulative_hosp</ci>"
+    },
+    {
+     "id": "incident_cases",
+     "name": "incident_cases",
+     "expression": "Incident_cases",
+     "expression_mathml": "<ci>Incident_cases</ci>"
+    },
+    {
+     "id": "incident_hosp",
+     "name": "incident_hosp",
+     "expression": "Incident_hosp",
+     "expression_mathml": "<ci>Incident_hosp</ci>"
+    },
+    {
+     "id": "incident_deaths",
+     "name": "incident_deaths",
+     "expression": "Incident_deaths",
+     "expression_mathml": "<ci>Incident_deaths</ci>"
     }
    ],
    "time": {
