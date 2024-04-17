@@ -288,42 +288,6 @@
      "expression": "person",
      "expression_mathml": "<ci>person</ci>"
     }
-   },
-   {
-    "id": "Incident_cases",
-    "name": "Incident_cases",
-    "grounding": {
-     "identifiers": {},
-     "modifiers": {}
-    },
-    "units": {
-     "expression": "person",
-     "expression_mathml": "<ci>person</ci>"
-    }
-   },
-   {
-    "id": "Incident_hosp",
-    "name": "Incident_hosp",
-    "grounding": {
-     "identifiers": {},
-     "modifiers": {}
-    },
-    "units": {
-     "expression": "person",
-     "expression_mathml": "<ci>person</ci>"
-    }
-   },
-   {
-    "id": "Incident_deaths",
-    "name": "Incident_deaths",
-    "grounding": {
-     "identifiers": {},
-     "modifiers": {}
-    },
-    "units": {
-     "expression": "person",
-     "expression_mathml": "<ci>person</ci>"
-    }
    }
   ],
   "transitions": [
@@ -668,89 +632,6 @@
     "properties": {
      "name": "t26"
     }
-   },
-   {
-    "id": "t27",
-    "input": [
-     "Incident_cases"
-    ],
-    "output": [],
-    "properties": {
-     "name": "t27"
-    }
-   },
-   {
-    "id": "t28",
-    "input": [
-     "Incident_hosp"
-    ],
-    "output": [],
-    "properties": {
-     "name": "t28"
-    }
-   },
-   {
-    "id": "t29",
-    "input": [
-     "Incident_deaths"
-    ],
-    "output": [],
-    "properties": {
-     "name": "t29"
-    }
-   },
-   {
-    "id": "t30",
-    "input": [
-     "E_u_alpha",
-     "E_v_alpha",
-     "E_u_delta",
-     "E_v_delta"
-    ],
-    "output": [
-     "E_u_alpha",
-     "E_v_alpha",
-     "E_u_delta",
-     "E_v_delta",
-     "Incident_cases"
-    ],
-    "properties": {
-     "name": "t30"
-    }
-   },
-   {
-    "id": "t31",
-    "input": [
-     "I_u_alpha",
-     "I_v_alpha",
-     "I_u_delta",
-     "I_v_delta"
-    ],
-    "output": [
-     "I_u_alpha",
-     "I_v_alpha",
-     "I_u_delta",
-     "I_v_delta",
-     "Incident_hosp"
-    ],
-    "properties": {
-     "name": "t31"
-    }
-   },
-   {
-    "id": "t32",
-    "input": [
-     "H_u",
-     "H_v"
-    ],
-    "output": [
-     "H_u",
-     "H_v",
-     "Incident_deaths"
-    ],
-    "properties": {
-     "name": "t32"
-    }
    }
   ]
  },
@@ -886,36 +767,6 @@
      "target": "t26",
      "expression": "I_u_alpha*r_IH_ua + I_u_delta*r_IH_ud + I_v_alpha*r_IH_va + I_v_delta*r_IH_vd",
      "expression_mathml": "<apply><plus/><apply><times/><ci>I_u_alpha</ci><ci>r_IH_ua</ci></apply><apply><times/><ci>I_u_delta</ci><ci>r_IH_ud</ci></apply><apply><times/><ci>I_v_alpha</ci><ci>r_IH_va</ci></apply><apply><times/><ci>I_v_delta</ci><ci>r_IH_vd</ci></apply></apply>"
-    },
-    {
-     "target": "t27",
-     "expression": "Incident_cases",
-     "expression_mathml": "<ci>Incident_cases</ci>"
-    },
-    {
-     "target": "t28",
-     "expression": "Incident_hosp",
-     "expression_mathml": "<ci>Incident_hosp</ci>"
-    },
-    {
-     "target": "t29",
-     "expression": "Incident_deaths",
-     "expression_mathml": "<ci>Incident_deaths</ci>"
-    },
-    {
-     "target": "t30",
-     "expression": "r_EI*(E_u_alpha + E_u_delta + E_v_alpha + E_v_delta)",
-     "expression_mathml": "<apply><times/><ci>r_EI</ci><apply><plus/><ci>E_u_alpha</ci><ci>E_u_delta</ci><ci>E_v_alpha</ci><ci>E_v_delta</ci></apply></apply>"
-    },
-    {
-     "target": "t31",
-     "expression": "I_u_alpha*r_IH_ua + I_u_delta*r_IH_ud + I_v_alpha*r_IH_va + I_v_delta*r_IH_vd",
-     "expression_mathml": "<apply><plus/><apply><times/><ci>I_u_alpha</ci><ci>r_IH_ua</ci></apply><apply><times/><ci>I_u_delta</ci><ci>r_IH_ud</ci></apply><apply><times/><ci>I_v_alpha</ci><ci>r_IH_va</ci></apply><apply><times/><ci>I_v_delta</ci><ci>r_IH_vd</ci></apply></apply>"
-    },
-    {
-     "target": "t32",
-     "expression": "H_u*r_HD_u + H_v*r_HD_v",
-     "expression_mathml": "<apply><plus/><apply><times/><ci>H_u</ci><ci>r_HD_u</ci></apply><apply><times/><ci>H_v</ci><ci>r_HD_v</ci></apply></apply>"
     }
    ],
    "initials": [
@@ -1008,21 +859,6 @@
      "target": "Cumulative_hosp",
      "expression": "136862.0",
      "expression_mathml": "<cn>136862.0</cn>"
-    },
-    {
-     "target": "Incident_cases",
-     "expression": "465.0",
-     "expression_mathml": "<cn>465.0</cn>"
-    },
-    {
-     "target": "Incident_hosp",
-     "expression": "113.0",
-     "expression_mathml": "<cn>113.0</cn>"
-    },
-    {
-     "target": "Incident_deaths",
-     "expression": "25.0",
-     "expression_mathml": "<cn>25.0</cn>"
     }
    ],
    "parameters": [
@@ -1325,20 +1161,20 @@
     {
      "id": "incident_cases",
      "name": "incident_cases",
-     "expression": "Incident_cases",
-     "expression_mathml": "<ci>Incident_cases</ci>"
+     "expression": "0.16*E_u_alpha + 0.16*E_u_delta + 0.16*E_v_alpha + 0.16*E_v_delta",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.16</cn><ci>E_u_alpha</ci></apply><apply><times/><cn>0.16</cn><ci>E_u_delta</ci></apply><apply><times/><cn>0.16</cn><ci>E_v_alpha</ci></apply><apply><times/><cn>0.16</cn><ci>E_v_delta</ci></apply></apply>"
     },
     {
      "id": "incident_hosp",
      "name": "incident_hosp",
-     "expression": "Incident_hosp",
-     "expression_mathml": "<ci>Incident_hosp</ci>"
+     "expression": "0.016*I_u_alpha + 0.015*I_u_delta + 0.005*I_v_alpha + 0.005*I_v_delta",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.016</cn><ci>I_u_alpha</ci></apply><apply><times/><cn>0.014999999999999999</cn><ci>I_u_delta</ci></apply><apply><times/><cn>0.0050000000000000001</cn><ci>I_v_alpha</ci></apply><apply><times/><cn>0.0050000000000000001</cn><ci>I_v_delta</ci></apply></apply>"
     },
     {
      "id": "incident_deaths",
      "name": "incident_deaths",
-     "expression": "Incident_deaths",
-     "expression_mathml": "<ci>Incident_deaths</ci>"
+     "expression": "0.016*H_u + 0.006*H_v",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.016</cn><ci>H_u</ci></apply><apply><times/><cn>0.0060000000000000001</cn><ci>H_v</ci></apply></apply>"
     }
    ],
    "time": {
