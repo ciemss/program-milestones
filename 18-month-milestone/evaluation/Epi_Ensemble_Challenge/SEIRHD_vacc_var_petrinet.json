@@ -919,14 +919,7 @@
     },
     {
      "id": "r_EI",
-     "value": 0.16,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.1,
-       "maximum": 0.25
-      }
-     },
+     "value": 0.1424,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -979,14 +972,7 @@
     },
     {
      "id": "r_IH_ua",
-     "value": 0.016,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.012,
-       "maximum": 0.03
-      }
-     },
+     "value": 0.02075,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -994,14 +980,7 @@
     },
     {
      "id": "r_IH_va",
-     "value": 0.005,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.002,
-       "maximum": 0.01
-      }
-     },
+     "value": 0.0056,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1009,14 +988,7 @@
     },
     {
      "id": "r_IH_ud",
-     "value": 0.015,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.012,
-       "maximum": 0.03
-      }
-     },
+     "value": 0.02133,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1054,14 +1026,7 @@
     },
     {
      "id": "r_HD_u",
-     "value": 0.016,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.01,
-       "maximum": 0.02
-      }
-     },
+     "value": 0.01455,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1069,14 +1034,7 @@
     },
     {
      "id": "r_HD_v",
-     "value": 0.006,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.005,
-       "maximum": 0.009
-      }
-     },
+     "value": 0.00693,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1084,14 +1042,7 @@
     },
     {
      "id": "r_IH_vd",
-     "value": 0.005,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.001,
-       "maximum": 0.04
-      }
-     },
+     "value": 0.0169,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1113,38 +1064,38 @@
     {
      "id": "susceptible",
      "name": "susceptible",
-     "expression": "S_m + S_o + S_y",
-     "expression_mathml": "<apply><plus/><ci>S_m</ci><ci>S_o</ci><ci>S_y</ci></apply>"
+     "expression": "S_u + S_v",
+     "expression_mathml": "<apply><plus/><ci>S_u</ci><ci>S_v</ci></apply>"
     },
     {
      "id": "exposed",
      "name": "exposed",
-     "expression": "E_m + E_o + E_y",
-     "expression_mathml": "<apply><plus/><ci>E_m</ci><ci>E_o</ci><ci>E_y</ci></apply>"
+     "expression": "E_u_alpha + E_u_delta + E_v_alpha + E_v_delta",
+     "expression_mathml": "<apply><plus/><ci>E_u_alpha</ci><ci>E_u_delta</ci><ci>E_v_alpha</ci><ci>E_v_delta</ci></apply>"
     },
     {
      "id": "infected",
      "name": "infected",
-     "expression": "I_m + I_o + I_y",
-     "expression_mathml": "<apply><plus/><ci>I_m</ci><ci>I_o</ci><ci>I_y</ci></apply>"
+     "expression": "I_u_alpha + I_u_delta + I_v_alpha + I_v_delta",
+     "expression_mathml": "<apply><plus/><ci>I_u_alpha</ci><ci>I_u_delta</ci><ci>I_v_alpha</ci><ci>I_v_delta</ci></apply>"
     },
     {
      "id": "recovered",
      "name": "recovered",
-     "expression": "R_m + R_o + R_y",
-     "expression_mathml": "<apply><plus/><ci>R_m</ci><ci>R_o</ci><ci>R_y</ci></apply>"
+     "expression": "R_u + R_v",
+     "expression_mathml": "<apply><plus/><ci>R_u</ci><ci>R_v</ci></apply>"
     },
     {
      "id": "hospitalized",
      "name": "hospitalized",
-     "expression": "H_m + H_o + H_y",
-     "expression_mathml": "<apply><plus/><ci>H_m</ci><ci>H_o</ci><ci>H_y</ci></apply>"
+     "expression": "H_u + H_v",
+     "expression_mathml": "<apply><plus/><ci>H_u</ci><ci>H_v</ci></apply>"
     },
     {
      "id": "deceased",
      "name": "deceased",
-     "expression": "D_m + D_o + D_y",
-     "expression_mathml": "<apply><plus/><ci>D_m</ci><ci>D_o</ci><ci>D_y</ci></apply>"
+     "expression": "D_u + D_v",
+     "expression_mathml": "<apply><plus/><ci>D_u</ci><ci>D_v</ci></apply>"
     },
     {
      "id": "cumulative_cases",
@@ -1161,20 +1112,20 @@
     {
      "id": "incident_cases",
      "name": "incident_cases",
-     "expression": "0.16*E_u_alpha + 0.16*E_u_delta + 0.16*E_v_alpha + 0.16*E_v_delta",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.16</cn><ci>E_u_alpha</ci></apply><apply><times/><cn>0.16</cn><ci>E_u_delta</ci></apply><apply><times/><cn>0.16</cn><ci>E_v_alpha</ci></apply><apply><times/><cn>0.16</cn><ci>E_v_delta</ci></apply></apply>"
+     "expression": "0.1424*E_u_alpha + 0.1424*E_u_delta + 0.1424*E_v_alpha + 0.1424*E_v_delta",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.1424</cn><ci>E_u_alpha</ci></apply><apply><times/><cn>0.1424</cn><ci>E_u_delta</ci></apply><apply><times/><cn>0.1424</cn><ci>E_v_alpha</ci></apply><apply><times/><cn>0.1424</cn><ci>E_v_delta</ci></apply></apply>"
     },
     {
      "id": "incident_hosp",
      "name": "incident_hosp",
-     "expression": "0.016*I_u_alpha + 0.015*I_u_delta + 0.005*I_v_alpha + 0.005*I_v_delta",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.016</cn><ci>I_u_alpha</ci></apply><apply><times/><cn>0.014999999999999999</cn><ci>I_u_delta</ci></apply><apply><times/><cn>0.0050000000000000001</cn><ci>I_v_alpha</ci></apply><apply><times/><cn>0.0050000000000000001</cn><ci>I_v_delta</ci></apply></apply>"
+     "expression": "0.02075*I_u_alpha + 0.02133*I_u_delta + 0.0056*I_v_alpha + 0.0169*I_v_delta",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.020750000000000001</cn><ci>I_u_alpha</ci></apply><apply><times/><cn>0.021329999999999998</cn><ci>I_u_delta</ci></apply><apply><times/><cn>0.0055999999999999999</cn><ci>I_v_alpha</ci></apply><apply><times/><cn>0.016899999999999998</cn><ci>I_v_delta</ci></apply></apply>"
     },
     {
      "id": "incident_deaths",
      "name": "incident_deaths",
-     "expression": "0.016*H_u + 0.006*H_v",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.016</cn><ci>H_u</ci></apply><apply><times/><cn>0.0060000000000000001</cn><ci>H_v</ci></apply></apply>"
+     "expression": "0.01455*H_u + 0.00693*H_v",
+     "expression_mathml": "<apply><plus/><apply><times/><cn>0.01455</cn><ci>H_u</ci></apply><apply><times/><cn>0.0069300000000000004</cn><ci>H_v</ci></apply></apply>"
     }
    ],
    "time": {

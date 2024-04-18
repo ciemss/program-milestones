@@ -335,14 +335,7 @@
     },
     {
      "id": "r_EI",
-     "value": 0.25,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.2,
-       "maximum": 0.3
-      }
-     },
+     "value": 0.2424,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -350,14 +343,7 @@
     },
     {
      "id": "p_IH",
-     "value": 0.1,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.05,
-       "maximum": 0.2
-      }
-     },
+     "value": 0.095,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -365,14 +351,7 @@
     },
     {
      "id": "r_IR",
-     "value": 0.2,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.15,
-       "maximum": 0.3
-      }
-     },
+     "value": 0.256,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -380,14 +359,7 @@
     },
     {
      "id": "p_HD",
-     "value": 0.083,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.08,
-       "maximum": 0.09
-      }
-     },
+     "value": 0.084,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -395,14 +367,7 @@
     },
     {
      "id": "r_HR",
-     "value": 0.16,
-     "distribution": {
-      "type": "StandardUniform1",
-      "parameters": {
-       "minimum": 0.1,
-       "maximum": 0.2
-      }
-     },
+     "value": 0.148,
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -424,38 +389,38 @@
     {
      "id": "susceptible",
      "name": "susceptible",
-     "expression": "S_m + S_o + S_y",
-     "expression_mathml": "<apply><plus/><ci>S_m</ci><ci>S_o</ci><ci>S_y</ci></apply>"
+     "expression": "S",
+     "expression_mathml": "<ci>S</ci>"
     },
     {
      "id": "exposed",
      "name": "exposed",
-     "expression": "E_m + E_o + E_y",
-     "expression_mathml": "<apply><plus/><ci>E_m</ci><ci>E_o</ci><ci>E_y</ci></apply>"
+     "expression": "E",
+     "expression_mathml": "<ci>E</ci>"
     },
     {
      "id": "infected",
      "name": "infected",
-     "expression": "I_m + I_o + I_y",
-     "expression_mathml": "<apply><plus/><ci>I_m</ci><ci>I_o</ci><ci>I_y</ci></apply>"
+     "expression": "I",
+     "expression_mathml": "<ci>I</ci>"
     },
     {
      "id": "recovered",
      "name": "recovered",
-     "expression": "R_m + R_o + R_y",
-     "expression_mathml": "<apply><plus/><ci>R_m</ci><ci>R_o</ci><ci>R_y</ci></apply>"
+     "expression": "R",
+     "expression_mathml": "<ci>R</ci>"
     },
     {
      "id": "hospitalized",
      "name": "hospitalized",
-     "expression": "H_m + H_o + H_y",
-     "expression_mathml": "<apply><plus/><ci>H_m</ci><ci>H_o</ci><ci>H_y</ci></apply>"
+     "expression": "H",
+     "expression_mathml": "<ci>H</ci>"
     },
     {
      "id": "deceased",
      "name": "deceased",
-     "expression": "D_m + D_o + D_y",
-     "expression_mathml": "<apply><plus/><ci>D_m</ci><ci>D_o</ci><ci>D_y</ci></apply>"
+     "expression": "D",
+     "expression_mathml": "<ci>D</ci>"
     },
     {
      "id": "cumulative_cases",
@@ -472,20 +437,20 @@
     {
      "id": "incident_cases",
      "name": "incident_cases",
-     "expression": "0.25*E",
-     "expression_mathml": "<apply><times/><cn>0.25</cn><ci>E</ci></apply>"
+     "expression": "0.2424*E",
+     "expression_mathml": "<apply><times/><cn>0.2424</cn><ci>E</ci></apply>"
     },
     {
      "id": "incident_hosp",
      "name": "incident_hosp",
-     "expression": "0.02*I",
-     "expression_mathml": "<apply><times/><cn>0.020000000000000004</cn><ci>I</ci></apply>"
+     "expression": "0.02432*I",
+     "expression_mathml": "<apply><times/><cn>0.024320000000000001</cn><ci>I</ci></apply>"
     },
     {
      "id": "incident_deaths",
      "name": "incident_deaths",
-     "expression": "0.01328*H",
-     "expression_mathml": "<apply><times/><cn>0.01328</cn><ci>H</ci></apply>"
+     "expression": "0.012432*H",
+     "expression_mathml": "<apply><times/><cn>0.012432</cn><ci>H</ci></apply>"
     }
    ],
    "time": {
