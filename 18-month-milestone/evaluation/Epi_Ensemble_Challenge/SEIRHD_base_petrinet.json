@@ -325,7 +325,7 @@
       "type": "StandardUniform1",
       "parameters": {
        "minimum": 0.2,
-       "maximum": 0.4
+       "maximum": 0.55
       }
      },
      "units": {
@@ -336,6 +336,13 @@
     {
      "id": "r_EI",
      "value": 0.2424,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.2,
+       "maximum": 0.3
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -344,6 +351,13 @@
     {
      "id": "p_IH",
      "value": 0.095,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.09,
+       "maximum": 0.12
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -352,6 +366,13 @@
     {
      "id": "r_IR",
      "value": 0.256,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.2,
+       "maximum": 0.3
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -360,6 +381,13 @@
     {
      "id": "p_HD",
      "value": 0.084,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.06,
+       "maximum": 0.095
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -368,6 +396,13 @@
     {
      "id": "r_HR",
      "value": 0.148,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.1,
+       "maximum": 0.2
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -433,24 +468,6 @@
      "name": "cumulative_hosp",
      "expression": "Cumulative_hosp",
      "expression_mathml": "<ci>Cumulative_hosp</ci>"
-    },
-    {
-     "id": "incident_cases",
-     "name": "incident_cases",
-     "expression": "0.2424*E",
-     "expression_mathml": "<apply><times/><cn>0.2424</cn><ci>E</ci></apply>"
-    },
-    {
-     "id": "incident_hosp",
-     "name": "incident_hosp",
-     "expression": "0.02432*I",
-     "expression_mathml": "<apply><times/><cn>0.024320000000000001</cn><ci>I</ci></apply>"
-    },
-    {
-     "id": "incident_deaths",
-     "name": "incident_deaths",
-     "expression": "0.012432*H",
-     "expression_mathml": "<apply><times/><cn>0.012432</cn><ci>H</ci></apply>"
     }
    ],
    "time": {

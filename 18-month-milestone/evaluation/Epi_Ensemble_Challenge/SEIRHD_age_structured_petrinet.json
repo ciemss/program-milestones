@@ -924,8 +924,8 @@
      "distribution": {
       "type": "StandardUniform1",
       "parameters": {
-       "minimum": 0.0001,
-       "maximum": 0.001
+       "minimum": 0.0004,
+       "maximum": 0.002
       }
      },
      "units": {
@@ -1000,6 +1000,13 @@
     {
      "id": "r_EI",
      "value": 0.1719,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.15,
+       "maximum": 0.25
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1038,6 +1045,13 @@
     {
      "id": "r_IH_y",
      "value": 0.0252,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.02,
+       "maximum": 0.05
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1046,6 +1060,13 @@
     {
      "id": "r_IH_m",
      "value": 0.0568,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.04,
+       "maximum": 0.07
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1054,6 +1075,13 @@
     {
      "id": "r_IH_o",
      "value": 0.0307,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.025,
+       "maximum": 0.04
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1107,6 +1135,13 @@
     {
      "id": "r_HD_y",
      "value": 0.002,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.0018,
+       "maximum": 0.004
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1115,6 +1150,13 @@
     {
      "id": "r_HD_m",
      "value": 0.0085,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.005,
+       "maximum": 0.0095
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1123,6 +1165,13 @@
     {
      "id": "r_HD_o",
      "value": 0.02898,
+     "distribution": {
+      "type": "StandardUniform1",
+      "parameters": {
+       "minimum": 0.02,
+       "maximum": 0.036
+      }
+     },
      "units": {
       "expression": "1/day",
       "expression_mathml": "<apply><power/><ci>day</ci><cn>-1</cn></apply>"
@@ -1199,24 +1248,6 @@
      "name": "cumulative_hosp",
      "expression": "Cumulative_hosp",
      "expression_mathml": "<ci>Cumulative_hosp</ci>"
-    },
-    {
-     "id": "incident_cases",
-     "name": "incident_cases",
-     "expression": "0.1719*E_m + 0.1719*E_o + 0.1719*E_y",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.1719</cn><ci>E_m</ci></apply><apply><times/><cn>0.1719</cn><ci>E_o</ci></apply><apply><times/><cn>0.1719</cn><ci>E_y</ci></apply></apply>"
-    },
-    {
-     "id": "incident_hosp",
-     "name": "incident_hosp",
-     "expression": "0.0568*I_m + 0.0307*I_o + 0.0252*I_y",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.056800000000000003</cn><ci>I_m</ci></apply><apply><times/><cn>0.030700000000000002</cn><ci>I_o</ci></apply><apply><times/><cn>0.0252</cn><ci>I_y</ci></apply></apply>"
-    },
-    {
-     "id": "incident_deaths",
-     "name": "incident_deaths",
-     "expression": "0.0085*H_m + 0.02898*H_o + 0.002*H_y",
-     "expression_mathml": "<apply><plus/><apply><times/><cn>0.0085000000000000006</cn><ci>H_m</ci></apply><apply><times/><cn>0.028979999999999999</cn><ci>H_o</ci></apply><apply><times/><cn>0.002</cn><ci>H_y</ci></apply></apply>"
     }
    ],
    "time": {
