@@ -614,500 +614,584 @@
             {
                "trajectory": "Cumul Cases",
                "timepoint": 1.0,
-               "lower": 2103298.7,
-               "upper": 2103779.525
+               "lower": 2103298.5875,
+               "upper": 2103755.7125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 2.0,
-               "lower": 2103745.9625,
-               "upper": 2104638.0375
+               "lower": 2103740.2,
+               "upper": 2104602.975
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 3.0,
-               "lower": 2104184.3875,
-               "upper": 2105458.125
+               "lower": 2104185.6625,
+               "upper": 2105389.5875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 4.0,
-               "lower": 2104602.325,
-               "upper": 2106275.4125
+               "lower": 2104620.5375,
+               "upper": 2106179.675
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 5.0,
-               "lower": 2105014.85,
-               "upper": 2107091.325
+               "lower": 2105051.4875,
+               "upper": 2106938.95
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 6.0,
-               "lower": 2105415.6125,
-               "upper": 2107913.2125
+               "lower": 2105467.4625,
+               "upper": 2107754.5625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 7.0,
-               "lower": 2105795.275,
-               "upper": 2108812.0875
+               "lower": 2105886.95,
+               "upper": 2108523.625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 8.0,
-               "lower": 2106169.5875,
-               "upper": 2109784.2375
+               "lower": 2106282.425,
+               "upper": 2109283.5625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 9.0,
-               "lower": 2106468.2,
-               "upper": 2110797.6125
+               "lower": 2106681.1125,
+               "upper": 2110054.725
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 10.0,
-               "lower": 2106788.075,
-               "upper": 2111841.2
+               "lower": 2107071.95,
+               "upper": 2110789.875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 11.0,
-               "lower": 2107089.625,
-               "upper": 2112914.7875
+               "lower": 2107431.85,
+               "upper": 2111577.2375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 12.0,
-               "lower": 2107355.6,
-               "upper": 2114006.7625
+               "lower": 2107755.15,
+               "upper": 2112377.7625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 13.0,
-               "lower": 2107656.65,
-               "upper": 2115132.175
+               "lower": 2108062.9875,
+               "upper": 2113355.525
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 14.0,
-               "lower": 2107921.8375,
-               "upper": 2116286.9625
+               "lower": 2108356.825,
+               "upper": 2114222.8875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 15.0,
-               "lower": 2108154.8375,
-               "upper": 2117358.9625
+               "lower": 2108657.0875,
+               "upper": 2115128.775
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 16.0,
-               "lower": 2108396.15,
-               "upper": 2118402.0375
+               "lower": 2108948.8625,
+               "upper": 2116091.7625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 17.0,
-               "lower": 2108570.025,
-               "upper": 2119451.6
+               "lower": 2109195.4125,
+               "upper": 2117018.0
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 18.0,
-               "lower": 2108698.8375,
-               "upper": 2120560.1125
+               "lower": 2109431.7125,
+               "upper": 2117953.3375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 19.0,
-               "lower": 2108861.9625,
-               "upper": 2121922.05
+               "lower": 2109650.4125,
+               "upper": 2118899.525
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 20.0,
-               "lower": 2109018.6,
-               "upper": 2123340.775
+               "lower": 2109856.0875,
+               "upper": 2119886.6625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 21.0,
-               "lower": 2109174.6875,
-               "upper": 2124797.4
+               "lower": 2110083.0625,
+               "upper": 2120883.6875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 22.0,
-               "lower": 2109290.2375,
-               "upper": 2126308.375
+               "lower": 2110257.975,
+               "upper": 2121897.95
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 23.0,
-               "lower": 2109395.55,
-               "upper": 2127863.5375
+               "lower": 2110465.9375,
+               "upper": 2122887.65
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 24.0,
-               "lower": 2109509.0375,
-               "upper": 2129415.5625
+               "lower": 2110643.75,
+               "upper": 2123840.975
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 25.0,
-               "lower": 2109657.6375,
-               "upper": 2130851.375
+               "lower": 2110813.95,
+               "upper": 2124798.825
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 26.0,
-               "lower": 2109744.425,
-               "upper": 2132315.55
+               "lower": 2110975.875,
+               "upper": 2125809.8125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 27.0,
-               "lower": 2109818.7375,
-               "upper": 2133800.35
+               "lower": 2111132.8375,
+               "upper": 2126839.9
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 28.0,
-               "lower": 2109893.9375,
-               "upper": 2135316.4625
+               "lower": 2111279.525,
+               "upper": 2127821.725
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 29.0,
-               "lower": 2109976.3375,
-               "upper": 2136862.9875
+               "lower": 2111422.3875,
+               "upper": 2128791.1875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 30.0,
-               "lower": 2110050.825,
-               "upper": 2138444.8
+               "lower": 2111587.9125,
+               "upper": 2129755.95
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 31.0,
-               "lower": 2110092.7875,
-               "upper": 2140058.325
+               "lower": 2111736.725,
+               "upper": 2130732.5
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 32.0,
-               "lower": 2110130.4125,
-               "upper": 2141705.8375
+               "lower": 2111833.125,
+               "upper": 2131722.8375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 33.0,
-               "lower": 2110166.0875,
-               "upper": 2143387.9125
+               "lower": 2111922.7875,
+               "upper": 2132915.0625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 34.0,
-               "lower": 2110208.4875,
-               "upper": 2145105.0
+               "lower": 2112031.1625,
+               "upper": 2134140.575
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 35.0,
-               "lower": 2110249.55,
-               "upper": 2146858.5
+               "lower": 2112119.7625,
+               "upper": 2135386.1
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 36.0,
-               "lower": 2110309.5875,
-               "upper": 2148648.9875
+               "lower": 2112206.0,
+               "upper": 2136654.7125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 37.0,
-               "lower": 2110368.85,
-               "upper": 2150477.2125
+               "lower": 2112286.9,
+               "upper": 2137946.6
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 38.0,
-               "lower": 2110425.4625,
-               "upper": 2152342.3125
+               "lower": 2112389.6125,
+               "upper": 2139139.5
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 39.0,
-               "lower": 2110475.575,
-               "upper": 2154247.975
+               "lower": 2112491.25,
+               "upper": 2140348.175
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 40.0,
-               "lower": 2110529.6875,
-               "upper": 2156297.7875
+               "lower": 2112567.0875,
+               "upper": 2141574.1375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 41.0,
-               "lower": 2110576.3125,
-               "upper": 2158636.525
+               "lower": 2112649.6875,
+               "upper": 2142816.025
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 42.0,
-               "lower": 2110622.325,
-               "upper": 2160846.275
+               "lower": 2112749.8375,
+               "upper": 2144076.975
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 43.0,
-               "lower": 2110665.65,
-               "upper": 2162961.6625
+               "lower": 2112826.475,
+               "upper": 2145345.3125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 44.0,
-               "lower": 2110705.8625,
-               "upper": 2165128.45
+               "lower": 2112897.1,
+               "upper": 2146635.7875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 45.0,
-               "lower": 2110737.2,
-               "upper": 2167342.95
+               "lower": 2112955.5125,
+               "upper": 2147941.5375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 46.0,
-               "lower": 2110762.55,
-               "upper": 2169609.075
+               "lower": 2113025.475,
+               "upper": 2149261.5625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 47.0,
-               "lower": 2110783.3625,
-               "upper": 2171928.7875
+               "lower": 2113084.4375,
+               "upper": 2150590.2125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 48.0,
-               "lower": 2110809.6625,
-               "upper": 2174298.3625
+               "lower": 2113139.3625,
+               "upper": 2151938.2625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 49.0,
-               "lower": 2110830.3875,
-               "upper": 2176712.9875
+               "lower": 2113192.4,
+               "upper": 2153301.8
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 50.0,
-               "lower": 2110850.375,
-               "upper": 2179169.7875
+               "lower": 2113242.9375,
+               "upper": 2154682.75
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 51.0,
-               "lower": 2110868.5,
-               "upper": 2181680.25
+               "lower": 2113291.0625,
+               "upper": 2156082.1875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 52.0,
-               "lower": 2110886.4,
-               "upper": 2184249.1625
+               "lower": 2113337.5875,
+               "upper": 2157783.4375
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 53.0,
-               "lower": 2110904.025,
-               "upper": 2186873.9375
+               "lower": 2113383.2625,
+               "upper": 2159528.8875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 54.0,
-               "lower": 2110917.7375,
-               "upper": 2189563.4499999997
+               "lower": 2113425.675,
+               "upper": 2161308.275
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 55.0,
-               "lower": 2110932.45,
-               "upper": 2192312.6999999997
+               "lower": 2113467.6,
+               "upper": 2163126.6
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 56.0,
-               "lower": 2110944.9125,
-               "upper": 2195124.3
+               "lower": 2113506.05,
+               "upper": 2164730.875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 57.0,
-               "lower": 2110957.9,
-               "upper": 2198001.1875
+               "lower": 2113539.3625,
+               "upper": 2166245.475
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 58.0,
-               "lower": 2110971.0375,
-               "upper": 2200943.5625
+               "lower": 2113579.675,
+               "upper": 2167773.3625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 59.0,
-               "lower": 2110980.6125,
-               "upper": 2203955.6125
+               "lower": 2113611.5125,
+               "upper": 2169324.15
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 60.0,
-               "lower": 2110994.4625,
-               "upper": 2207035.9375
+               "lower": 2113646.55,
+               "upper": 2170889.75
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 61.0,
-               "lower": 2110999.675,
-               "upper": 2210190.1374999997
+               "lower": 2113678.7625,
+               "upper": 2172476.425
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 62.0,
-               "lower": 2111011.475,
-               "upper": 2213419.4
+               "lower": 2113711.1125,
+               "upper": 2174082.225
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 63.0,
-               "lower": 2111016.3,
-               "upper": 2216717.3
+               "lower": 2113734.95,
+               "upper": 2175707.925
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 64.0,
-               "lower": 2111022.9375,
-               "upper": 2220094.3375
+               "lower": 2113762.1625,
+               "upper": 2177341.525
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 65.0,
-               "lower": 2111031.425,
-               "upper": 2223553.4125
+               "lower": 2113787.6375,
+               "upper": 2178987.9125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 66.0,
-               "lower": 2111035.9,
-               "upper": 2227090.2624999997
+               "lower": 2113811.175,
+               "upper": 2180653.0875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 67.0,
-               "lower": 2111044.8375,
-               "upper": 2230714.125
+               "lower": 2113829.5375,
+               "upper": 2182341.65
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 68.0,
-               "lower": 2111051.175,
-               "upper": 2234422.7125
+               "lower": 2113857.575,
+               "upper": 2184038.3125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 69.0,
-               "lower": 2111056.3,
-               "upper": 2238215.4875
+               "lower": 2113878.8,
+               "upper": 2185762.75
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 70.0,
-               "lower": 2111061.525,
-               "upper": 2242098.9625
+               "lower": 2113899.55,
+               "upper": 2187503.5124999997
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 71.0,
-               "lower": 2111066.525,
-               "upper": 2246074.4875
+               "lower": 2113919.475,
+               "upper": 2189265.1875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 72.0,
-               "lower": 2111070.9125,
-               "upper": 2250142.725
+               "lower": 2113939.0,
+               "upper": 2191044.6374999997
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 73.0,
-               "lower": 2111075.3,
-               "upper": 2254309.525
+               "lower": 2113945.5375,
+               "upper": 2192854.125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 74.0,
-               "lower": 2111078.4875,
-               "upper": 2258573.1
+               "lower": 2113951.7,
+               "upper": 2194681.5749999997
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 75.0,
-               "lower": 2111076.6375,
-               "upper": 2262935.4499999997
+               "lower": 2113959.75,
+               "upper": 2196525.4875
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 76.0,
-               "lower": 2111086.5,
-               "upper": 2267408.2125
+               "lower": 2113966.45,
+               "upper": 2198394.025
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 77.0,
-               "lower": 2111087.7625,
-               "upper": 2271983.6999999997
+               "lower": 2113973.05,
+               "upper": 2200284.2249999996
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 78.0,
-               "lower": 2111093.0875,
-               "upper": 2276667.4125
+               "lower": 2113977.875,
+               "upper": 2202195.125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 79.0,
-               "lower": 2111096.5625,
-               "upper": 2281462.8
+               "lower": 2113983.8,
+               "upper": 2204130.125
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 80.0,
-               "lower": 2111099.55,
-               "upper": 2286371.5749999997
+               "lower": 2113988.4375,
+               "upper": 2206085.8
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 81.0,
-               "lower": 2111100.825,
-               "upper": 2291397.9125
+               "lower": 2113993.2875,
+               "upper": 2208165.5999999996
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 82.0,
-               "lower": 2111103.25,
-               "upper": 2296545.1
+               "lower": 2113998.0,
+               "upper": 2210282.3625
             },
             {
                "trajectory": "Cumul Cases",
                "timepoint": 83.0,
-               "lower": 2111105.4375,
-               "upper": 2301812.4499999997
+               "lower": 2114001.6125,
+               "upper": 2212424.4499999997
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 84.0,
+               "lower": 2114003.9125,
+               "upper": 2214597.025
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 85.0,
+               "lower": 2114009.55,
+               "upper": 2216800.0999999996
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 86.0,
+               "lower": 2114012.4,
+               "upper": 2219034.5749999997
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 87.0,
+               "lower": 2114016.45,
+               "upper": 2221294.9
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 88.0,
+               "lower": 2114019.9625,
+               "upper": 2223587.675
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 89.0,
+               "lower": 2114026.225,
+               "upper": 2225907.2624999997
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 90.0,
+               "lower": 2114025.325,
+               "upper": 2228269.15
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 91.0,
+               "lower": 2114028.0125,
+               "upper": 2230656.9749999996
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 92.0,
+               "lower": 2114030.65,
+               "upper": 2233078.0875
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 93.0,
+               "lower": 2114034.1125,
+               "upper": 2235530.4124999996
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 94.0,
+               "lower": 2114035.1625,
+               "upper": 2238019.675
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 95.0,
+               "lower": 2114035.975,
+               "upper": 2240541.6249999995
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 96.0,
+               "lower": 2114039.1375,
+               "upper": 2243096.7375
+            },
+            {
+               "trajectory": "Cumul Cases",
+               "timepoint": 97.0,
+               "lower": 2114039.875,
+               "upper": 2245687.3499999996
             },
             {
                "trajectory": "Cumul Hosp",
@@ -1118,500 +1202,584 @@
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 1.0,
-               "lower": 136907.39296875,
-               "upper": 136937.471875
+               "lower": 136907.328125,
+               "upper": 136935.8765625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 2.0,
-               "lower": 136949.746875,
-               "upper": 137010.98046875
+               "lower": 136952.3296875,
+               "upper": 137009.48359375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 3.0,
-               "lower": 136989.9328125,
-               "upper": 137083.55546875
+               "lower": 136996.23046875,
+               "upper": 137082.0234375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 4.0,
-               "lower": 137029.8625,
-               "upper": 137153.65234375
+               "lower": 137037.63984375,
+               "upper": 137152.55390625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 5.0,
-               "lower": 137069.25859375,
-               "upper": 137222.125
+               "lower": 137074.83671875,
+               "upper": 137224.696875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 6.0,
-               "lower": 137106.65390625,
-               "upper": 137292.55234375
+               "lower": 137112.36640625,
+               "upper": 137294.4171875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 7.0,
-               "lower": 137143.7609375,
-               "upper": 137362.0578125
+               "lower": 137148.690625,
+               "upper": 137364.01171875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 8.0,
-               "lower": 137177.52734375,
-               "upper": 137438.7796875
+               "lower": 137184.24453125,
+               "upper": 137432.546875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 9.0,
-               "lower": 137208.3796875,
-               "upper": 137519.74921875
+               "lower": 137220.25703125,
+               "upper": 137500.8875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 10.0,
-               "lower": 137239.0109375,
-               "upper": 137587.33046875
+               "lower": 137252.7515625,
+               "upper": 137568.5125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 11.0,
-               "lower": 137269.228125,
-               "upper": 137677.2046875
+               "lower": 137281.94296875,
+               "upper": 137634.56171875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 12.0,
-               "lower": 137298.11796875,
-               "upper": 137758.915625
+               "lower": 137309.46484375,
+               "upper": 137698.6265625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 13.0,
-               "lower": 137326.01015625,
-               "upper": 137835.49609375
+               "lower": 137334.83125,
+               "upper": 137762.7328125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 14.0,
-               "lower": 137352.5765625,
-               "upper": 137912.11484375
+               "lower": 137362.83125,
+               "upper": 137814.79375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 15.0,
-               "lower": 137375.87734375,
-               "upper": 137988.10234375
+               "lower": 137388.00703125,
+               "upper": 137883.484375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 16.0,
-               "lower": 137398.9875,
-               "upper": 138074.375
+               "lower": 137412.27890625,
+               "upper": 137949.2734375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 17.0,
-               "lower": 137424.840625,
-               "upper": 138146.18046875
+               "lower": 137436.9234375,
+               "upper": 138016.35078125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 18.0,
-               "lower": 137450.52578125,
-               "upper": 138218.16328125
+               "lower": 137461.409375,
+               "upper": 138081.41796875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 19.0,
-               "lower": 137475.3984375,
-               "upper": 138295.86171875
+               "lower": 137486.3296875,
+               "upper": 138141.13671875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 20.0,
-               "lower": 137498.36640625,
-               "upper": 138373.821875
+               "lower": 137511.809375,
+               "upper": 138213.97734375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 21.0,
-               "lower": 137518.0359375,
-               "upper": 138451.7109375
+               "lower": 137532.35703125,
+               "upper": 138278.78359375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 22.0,
-               "lower": 137538.1421875,
-               "upper": 138544.10390625
+               "lower": 137552.05546875,
+               "upper": 138350.6953125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 23.0,
-               "lower": 137557.56953125,
-               "upper": 138648.35
+               "lower": 137570.8953125,
+               "upper": 138417.6984375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 24.0,
-               "lower": 137574.1859375,
-               "upper": 138755.26796875
+               "lower": 137589.32265625,
+               "upper": 138484.71640625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 25.0,
-               "lower": 137590.16953125,
-               "upper": 138865.36484375
+               "lower": 137607.084375,
+               "upper": 138564.5640625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 26.0,
-               "lower": 137605.79765625,
-               "upper": 138977.6421875
+               "lower": 137624.09609375,
+               "upper": 138647.2953125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 27.0,
-               "lower": 137620.73671875,
-               "upper": 139093.3
+               "lower": 137640.72265625,
+               "upper": 138728.221875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 28.0,
-               "lower": 137635.52421875,
-               "upper": 139212.0265625
+               "lower": 137657.0234375,
+               "upper": 138788.29140625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 29.0,
-               "lower": 137647.51484375,
-               "upper": 139334.09140625
+               "lower": 137672.75,
+               "upper": 138867.975
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 30.0,
-               "lower": 137659.5859375,
-               "upper": 139459.73203125
+               "lower": 137687.68671875,
+               "upper": 138952.1390625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 31.0,
-               "lower": 137671.3375,
-               "upper": 139568.5796875
+               "lower": 137701.4546875,
+               "upper": 139022.73984375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 32.0,
-               "lower": 137682.45625,
-               "upper": 139667.37421875
+               "lower": 137715.903125,
+               "upper": 139089.07578125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 33.0,
-               "lower": 137692.9890625,
-               "upper": 139766.93515625
+               "lower": 137729.25390625,
+               "upper": 139155.21953125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 34.0,
-               "lower": 137703.0546875,
-               "upper": 139867.36796875
+               "lower": 137742.1390625,
+               "upper": 139240.49765625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 35.0,
-               "lower": 137712.59296875,
-               "upper": 139968.66171875
+               "lower": 137750.35234375,
+               "upper": 139354.546875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 36.0,
-               "lower": 137721.6984375,
-               "upper": 140069.67109375
+               "lower": 137757.4859375,
+               "upper": 139465.81875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 37.0,
-               "lower": 137730.5234375,
-               "upper": 140171.48671875
+               "lower": 137767.81171875,
+               "upper": 139551.94921875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 38.0,
-               "lower": 137738.56328125,
-               "upper": 140274.26484375
+               "lower": 137779.1828125,
+               "upper": 139637.92109375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 39.0,
-               "lower": 137746.240625,
-               "upper": 140417.97265625
+               "lower": 137790.03125,
+               "upper": 139724.16953125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 40.0,
-               "lower": 137753.41796875,
-               "upper": 140580.33125
+               "lower": 137800.76484375,
+               "upper": 139810.41875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 41.0,
-               "lower": 137759.5109375,
-               "upper": 140747.83125
+               "lower": 137811.07890625,
+               "upper": 139897.3703125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 42.0,
-               "lower": 137765.29296875,
-               "upper": 140921.15078125
+               "lower": 137821.0453125,
+               "upper": 139976.29921875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 43.0,
-               "lower": 137770.6625,
-               "upper": 141100.0296875
+               "lower": 137829.4046875,
+               "upper": 140047.60859375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 44.0,
-               "lower": 137776.15625,
-               "upper": 141284.7203125
+               "lower": 137831.75703125,
+               "upper": 140118.55703125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 45.0,
-               "lower": 137778.76484375,
-               "upper": 141475.53828125
+               "lower": 137834.16875,
+               "upper": 140213.93671875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 46.0,
-               "lower": 137781.13125,
-               "upper": 141656.02578125
+               "lower": 137837.140625,
+               "upper": 140332.74765625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 47.0,
-               "lower": 137783.2390625,
-               "upper": 141809.92265625
+               "lower": 137844.0453125,
+               "upper": 140441.0625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 48.0,
-               "lower": 137785.27109375,
-               "upper": 141966.39296875
+               "lower": 137850.840625,
+               "upper": 140536.27421875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 49.0,
-               "lower": 137787.12265625,
-               "upper": 142125.753125
+               "lower": 137857.38671875,
+               "upper": 140632.1671875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 50.0,
-               "lower": 137788.79921875,
-               "upper": 142287.9671875
+               "lower": 137863.44609375,
+               "upper": 140729.30625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 51.0,
-               "lower": 137790.40546875,
-               "upper": 142478.59843749998
+               "lower": 137869.67421875,
+               "upper": 140827.3046875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 52.0,
-               "lower": 137791.88515625,
-               "upper": 142696.3265625
+               "lower": 137875.55078125,
+               "upper": 140926.503125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 53.0,
-               "lower": 137793.2625,
-               "upper": 142920.7421875
+               "lower": 137881.58046875,
+               "upper": 141026.12578124998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 54.0,
-               "lower": 137794.5171875,
-               "upper": 143152.17421875
+               "lower": 137887.16796875,
+               "upper": 141126.9
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 55.0,
-               "lower": 137795.675,
-               "upper": 143390.6953125
+               "lower": 137892.0890625,
+               "upper": 141228.8734375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 56.0,
-               "lower": 137796.7875,
-               "upper": 143636.69453125
+               "lower": 137895.7046875,
+               "upper": 141330.58515625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 57.0,
-               "lower": 137797.8046875,
-               "upper": 143888.046875
+               "lower": 137899.3859375,
+               "upper": 141433.28203124998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 58.0,
-               "lower": 137798.884375,
-               "upper": 144145.728125
+               "lower": 137903.471875,
+               "upper": 141536.75078124998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 59.0,
-               "lower": 137799.66015625,
-               "upper": 144411.9234375
+               "lower": 137905.2203125,
+               "upper": 141641.36406249998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 60.0,
-               "lower": 137800.7421875,
-               "upper": 144685.9671875
+               "lower": 137907.5078125,
+               "upper": 141746.89296875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 61.0,
-               "lower": 137801.23203125,
-               "upper": 144968.09062499998
+               "lower": 137909.94609375,
+               "upper": 141853.45703125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 62.0,
-               "lower": 137803.865625,
-               "upper": 145258.815625
+               "lower": 137912.2359375,
+               "upper": 141961.05625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 63.0,
-               "lower": 137806.36875,
-               "upper": 145558.8
+               "lower": 137914.528125,
+               "upper": 142069.6515625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 64.0,
-               "lower": 137808.8171875,
-               "upper": 145867.8109375
+               "lower": 137916.5890625,
+               "upper": 142179.425
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 65.0,
-               "lower": 137811.1234375,
-               "upper": 146186.121875
+               "lower": 137918.68671875,
+               "upper": 142289.9796875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 66.0,
-               "lower": 137813.32265625,
-               "upper": 146514.103125
+               "lower": 137920.6265625,
+               "upper": 142413.57499999998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 67.0,
-               "lower": 137815.45546875,
-               "upper": 146809.83203125
+               "lower": 137922.49140625,
+               "upper": 142543.36484375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 68.0,
-               "lower": 137817.35625,
-               "upper": 147091.82109375
+               "lower": 137924.14765625,
+               "upper": 142674.80156249998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 69.0,
-               "lower": 137819.425,
-               "upper": 147379.89609375
+               "lower": 137925.8140625,
+               "upper": 142808.19218749998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 70.0,
-               "lower": 137821.2546875,
-               "upper": 147674.09921875
+               "lower": 137927.35546875,
+               "upper": 142951.9796875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 71.0,
-               "lower": 137823.0484375,
-               "upper": 147972.96640625
+               "lower": 137928.8546875,
+               "upper": 143106.4703125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 72.0,
-               "lower": 137824.71015625,
-               "upper": 148275.49453125
+               "lower": 137930.26484375,
+               "upper": 143263.88046875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 73.0,
-               "lower": 137826.33984375,
-               "upper": 148584.36171875
+               "lower": 137931.625,
+               "upper": 143424.5578125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 74.0,
-               "lower": 137827.85078125,
-               "upper": 148899.56718749998
+               "lower": 137932.8859375,
+               "upper": 143588.29609375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 75.0,
-               "lower": 137829.05390625,
-               "upper": 149221.2125
+               "lower": 137934.12421875,
+               "upper": 143755.0421875
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 76.0,
-               "lower": 137830.30625,
-               "upper": 149549.52812499998
+               "lower": 137935.41796875,
+               "upper": 143925.065625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 77.0,
-               "lower": 137830.57578125,
-               "upper": 149884.48515624998
+               "lower": 137936.63203125,
+               "upper": 144098.1578125
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 78.0,
-               "lower": 137831.128125,
-               "upper": 150226.5265625
+               "lower": 137937.86484375,
+               "upper": 144275.24843749998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 79.0,
-               "lower": 137831.5421875,
-               "upper": 150575.32421875
+               "lower": 137938.97421875,
+               "upper": 144455.5109375
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 80.0,
-               "lower": 137831.76484375,
-               "upper": 150931.578125
+               "lower": 137940.10234375,
+               "upper": 144639.18984374998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 81.0,
-               "lower": 137832.1125,
-               "upper": 151294.91640625
+               "lower": 137941.13515625,
+               "upper": 144826.49140625
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 82.0,
-               "lower": 137832.34140625,
-               "upper": 151665.68359375
+               "lower": 137942.04921875,
+               "upper": 145017.39531249998
             },
             {
                "trajectory": "Cumul Hosp",
                "timepoint": 83.0,
-               "lower": 137832.67421875,
-               "upper": 152044.01640624998
+               "lower": 137943.075,
+               "upper": 145212.196875
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 84.0,
+               "lower": 137944.03515625,
+               "upper": 145410.5484375
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 85.0,
+               "lower": 137944.8375,
+               "upper": 145613.23359375
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 86.0,
+               "lower": 137945.60859375,
+               "upper": 145819.54374999998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 87.0,
+               "lower": 137946.43671875,
+               "upper": 146030.13671875
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 88.0,
+               "lower": 137947.215625,
+               "upper": 146244.8359375
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 89.0,
+               "lower": 137948.6453125,
+               "upper": 146464.1796875
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 90.0,
+               "lower": 137950.6953125,
+               "upper": 146686.8375
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 91.0,
+               "lower": 137952.49921875,
+               "upper": 146914.49687499998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 92.0,
+               "lower": 137954.5515625,
+               "upper": 147146.54921874998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 93.0,
+               "lower": 137956.34609375,
+               "upper": 147383.34218749998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 94.0,
+               "lower": 137958.16484375,
+               "upper": 147624.60078125
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 95.0,
+               "lower": 137959.94140625,
+               "upper": 147870.71015625
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 96.0,
+               "lower": 137961.55078125,
+               "upper": 148121.80156249998
+            },
+            {
+               "trajectory": "Cumul Hosp",
+               "timepoint": 97.0,
+               "lower": 137963.1875,
+               "upper": 148377.88828125
             },
             {
                "trajectory": "Deaths",
@@ -1622,500 +1790,584 @@
             {
                "trajectory": "Deaths",
                "timepoint": 1.0,
-               "lower": 53128.71796875,
-               "upper": 53131.8330078125
+               "lower": 53128.591796875,
+               "upper": 53131.6814453125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 2.0,
-               "lower": 53134.067578125,
-               "upper": 53140.236328125
+               "lower": 53133.8015625,
+               "upper": 53139.80859375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 3.0,
-               "lower": 53138.880859375,
-               "upper": 53148.422265625
+               "lower": 53138.613671875,
+               "upper": 53147.60234375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 4.0,
-               "lower": 53143.3853515625,
-               "upper": 53156.540625
+               "lower": 53143.085546875,
+               "upper": 53154.9212890625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 5.0,
-               "lower": 53147.496875,
-               "upper": 53164.279296875
+               "lower": 53147.32265625,
+               "upper": 53162.253125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 6.0,
-               "lower": 53151.448046875,
-               "upper": 53171.7015625
+               "lower": 53151.1248046875,
+               "upper": 53169.0076171875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 7.0,
-               "lower": 53155.0185546875,
-               "upper": 53178.8708984375
+               "lower": 53154.8134765625,
+               "upper": 53175.828515625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 8.0,
-               "lower": 53158.54765625,
-               "upper": 53185.822265625
+               "lower": 53158.0951171875,
+               "upper": 53182.6205078125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 9.0,
-               "lower": 53161.855078125,
-               "upper": 53192.6296875
+               "lower": 53161.374609375,
+               "upper": 53189.238671875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 10.0,
-               "lower": 53164.7462890625,
-               "upper": 53199.335546875
+               "lower": 53164.5154296875,
+               "upper": 53195.5384765625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 11.0,
-               "lower": 53167.5080078125,
-               "upper": 53206.2505859375
+               "lower": 53167.65625,
+               "upper": 53201.599609375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 12.0,
-               "lower": 53170.371875,
-               "upper": 53214.1359375
+               "lower": 53170.63359375,
+               "upper": 53208.4388671875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 13.0,
-               "lower": 53173.16796875,
-               "upper": 53222.4513671875
+               "lower": 53173.3435546875,
+               "upper": 53214.1171875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 14.0,
-               "lower": 53175.866015625,
-               "upper": 53229.112890625
+               "lower": 53176.046484375,
+               "upper": 53219.6099609375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 15.0,
-               "lower": 53178.503515625,
-               "upper": 53236.174609375
+               "lower": 53178.534375,
+               "upper": 53225.1958984375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 16.0,
-               "lower": 53181.03671875,
-               "upper": 53244.0453125
+               "lower": 53180.9359375,
+               "upper": 53231.1671875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 17.0,
-               "lower": 53183.253125,
-               "upper": 53251.41484375
+               "lower": 53183.22109375,
+               "upper": 53236.86484375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 18.0,
-               "lower": 53185.39921875,
-               "upper": 53258.1298828125
+               "lower": 53185.1578125,
+               "upper": 53242.8515625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 19.0,
-               "lower": 53187.419921875,
-               "upper": 53263.928515625
+               "lower": 53187.0091796875,
+               "upper": 53248.838671875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 20.0,
-               "lower": 53189.4064453125,
-               "upper": 53271.064453125
+               "lower": 53188.7259765625,
+               "upper": 53254.8056640625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 21.0,
-               "lower": 53191.2787109375,
-               "upper": 53279.3158203125
+               "lower": 53190.3841796875,
+               "upper": 53260.7484375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 22.0,
-               "lower": 53193.069140625,
-               "upper": 53284.9734375
+               "lower": 53191.9224609375,
+               "upper": 53267.5486328125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 23.0,
-               "lower": 53194.84765625,
-               "upper": 53290.171484375
+               "lower": 53193.780859375,
+               "upper": 53272.84375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 24.0,
-               "lower": 53196.5181640625,
-               "upper": 53296.9328125
+               "lower": 53195.7291015625,
+               "upper": 53278.703125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 25.0,
-               "lower": 53198.0361328125,
-               "upper": 53304.984765625
+               "lower": 53197.6181640625,
+               "upper": 53284.368359375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 26.0,
-               "lower": 53199.562890625,
-               "upper": 53313.15625
+               "lower": 53199.288671875,
+               "upper": 53290.865625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 27.0,
-               "lower": 53201.0525390625,
-               "upper": 53321.5228515625
+               "lower": 53200.448828125,
+               "upper": 53297.9642578125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 28.0,
-               "lower": 53202.469921875,
-               "upper": 53328.193359375
+               "lower": 53201.5310546875,
+               "upper": 53304.4275390625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 29.0,
-               "lower": 53203.7658203125,
-               "upper": 53334.397265625
+               "lower": 53202.5861328125,
+               "upper": 53310.912109375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 30.0,
-               "lower": 53205.0478515625,
-               "upper": 53342.9328125
+               "lower": 53203.5705078125,
+               "upper": 53317.3380859375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 31.0,
-               "lower": 53206.273046875,
-               "upper": 53351.2541015625
+               "lower": 53204.5466796875,
+               "upper": 53323.771484375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 32.0,
-               "lower": 53207.4498046875,
-               "upper": 53358.945703125
+               "lower": 53205.5310546875,
+               "upper": 53330.1474609375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 33.0,
-               "lower": 53208.4205078125,
-               "upper": 53368.8154296875
+               "lower": 53207.26015625,
+               "upper": 53334.761328125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 34.0,
-               "lower": 53209.2078125,
-               "upper": 53378.96640625
+               "lower": 53208.383984375,
+               "upper": 53340.684375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 35.0,
-               "lower": 53209.9494140625,
-               "upper": 53389.38984375
+               "lower": 53209.155078125,
+               "upper": 53347.59375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 36.0,
-               "lower": 53210.6666015625,
-               "upper": 53400.1255859375
+               "lower": 53209.8958984375,
+               "upper": 53354.4818359375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 37.0,
-               "lower": 53211.290625,
-               "upper": 53411.1384765625
+               "lower": 53210.56875,
+               "upper": 53361.455859375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 38.0,
-               "lower": 53211.87109375,
-               "upper": 53421.4650390625
+               "lower": 53211.237109375,
+               "upper": 53368.5609375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 39.0,
-               "lower": 53212.426953125,
-               "upper": 53430.7107421875
+               "lower": 53211.8375,
+               "upper": 53375.6416015625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 40.0,
-               "lower": 53212.9828125,
-               "upper": 53440.133984375
+               "lower": 53212.4234375,
+               "upper": 53382.47734375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 41.0,
-               "lower": 53213.491796875,
-               "upper": 53449.566796875
+               "lower": 53212.9625,
+               "upper": 53390.18046875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 42.0,
-               "lower": 53213.9658203125,
-               "upper": 53459.140625
+               "lower": 53213.470703125,
+               "upper": 53397.3552734375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 43.0,
-               "lower": 53214.3642578125,
-               "upper": 53468.7916015625
+               "lower": 53213.946484375,
+               "upper": 53403.645703125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 44.0,
-               "lower": 53214.9052734375,
-               "upper": 53478.53671875
+               "lower": 53214.3982421875,
+               "upper": 53411.340625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 45.0,
-               "lower": 53215.6392578125,
-               "upper": 53488.40078125
+               "lower": 53214.82734375,
+               "upper": 53418.4193359375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 46.0,
-               "lower": 53216.4015625,
-               "upper": 53498.45234375
+               "lower": 53215.2220703125,
+               "upper": 53427.823828125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 47.0,
-               "lower": 53217.1412109375,
-               "upper": 53509.215234375
+               "lower": 53215.5931640625,
+               "upper": 53435.758203125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 48.0,
-               "lower": 53217.8919921875,
-               "upper": 53524.173046875
+               "lower": 53215.9830078125,
+               "upper": 53445.527734375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 49.0,
-               "lower": 53218.549609375,
-               "upper": 53539.627734375
+               "lower": 53216.333984375,
+               "upper": 53455.6380859375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 50.0,
-               "lower": 53219.297265625,
-               "upper": 53555.53046875
+               "lower": 53216.642578125,
+               "upper": 53462.3095703125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 51.0,
-               "lower": 53219.978515625,
-               "upper": 53571.93046875
+               "lower": 53217.04921875,
+               "upper": 53468.8806640625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 52.0,
-               "lower": 53220.617578125,
-               "upper": 53588.8982421875
+               "lower": 53217.575390625,
+               "upper": 53476.858984375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 53.0,
-               "lower": 53221.2431640625,
-               "upper": 53606.3732421875
+               "lower": 53217.987890625,
+               "upper": 53485.5908203125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 54.0,
-               "lower": 53221.860546875,
-               "upper": 53624.389453125
+               "lower": 53218.42265625,
+               "upper": 53494.464453125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 55.0,
-               "lower": 53222.2357421875,
-               "upper": 53642.9798828125
+               "lower": 53218.86484375,
+               "upper": 53503.427734375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 56.0,
-               "lower": 53222.566796875,
-               "upper": 53660.0708984375
+               "lower": 53219.2802734375,
+               "upper": 53512.52890625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 57.0,
-               "lower": 53222.896484375,
-               "upper": 53676.0123046875
+               "lower": 53219.72890625,
+               "upper": 53521.7611328125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 58.0,
-               "lower": 53223.221875,
-               "upper": 53692.2125
+               "lower": 53220.0890625,
+               "upper": 53531.10078125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 59.0,
-               "lower": 53223.48046875,
-               "upper": 53708.87734375
+               "lower": 53220.4951171875,
+               "upper": 53540.5505859375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 60.0,
-               "lower": 53223.75859375,
-               "upper": 53726.0849609375
+               "lower": 53220.852734375,
+               "upper": 53550.181640625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 61.0,
-               "lower": 53224.0212890625,
-               "upper": 53743.61796875
+               "lower": 53221.366015625,
+               "upper": 53559.45546875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 62.0,
-               "lower": 53224.2484375,
-               "upper": 53761.5052734375
+               "lower": 53222.0203125,
+               "upper": 53567.746484375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 63.0,
-               "lower": 53224.532421875,
-               "upper": 53779.45390625
+               "lower": 53222.57890625,
+               "upper": 53576.1216796875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 64.0,
-               "lower": 53224.755859375,
-               "upper": 53797.778515625
+               "lower": 53223.195703125,
+               "upper": 53584.5419921875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 65.0,
-               "lower": 53224.93671875,
-               "upper": 53816.5509765625
+               "lower": 53223.6888671875,
+               "upper": 53593.0345703125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 66.0,
-               "lower": 53225.0216796875,
-               "upper": 53835.6900390625
+               "lower": 53223.743359375,
+               "upper": 53601.580078125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 67.0,
-               "lower": 53225.0751953125,
-               "upper": 53855.181640625
+               "lower": 53223.7884765625,
+               "upper": 53610.1748046875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 68.0,
-               "lower": 53225.136328125,
-               "upper": 53875.078125
+               "lower": 53223.851953125,
+               "upper": 53618.8705078125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 69.0,
-               "lower": 53225.2005859375,
-               "upper": 53894.36328125
+               "lower": 53223.89453125,
+               "upper": 53627.5865234375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 70.0,
-               "lower": 53225.24609375,
-               "upper": 53913.366796875
+               "lower": 53223.95078125,
+               "upper": 53637.21484375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 71.0,
-               "lower": 53225.3125,
-               "upper": 53934.40625
+               "lower": 53223.9921875,
+               "upper": 53647.0544921875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 72.0,
-               "lower": 53225.369921875,
-               "upper": 53955.871484375
+               "lower": 53224.223828125,
+               "upper": 53657.00546875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 73.0,
-               "lower": 53225.404296875,
-               "upper": 53977.7953125
+               "lower": 53224.4068359375,
+               "upper": 53666.9697265625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 74.0,
-               "lower": 53225.4453125,
-               "upper": 54000.167578125
+               "lower": 53224.6123046875,
+               "upper": 53677.062890625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 75.0,
-               "lower": 53225.493359375,
-               "upper": 54023.003125
+               "lower": 53224.7876953125,
+               "upper": 53687.3
             },
             {
                "trajectory": "Deaths",
                "timepoint": 76.0,
-               "lower": 53225.5271484375,
-               "upper": 54046.3439453125
+               "lower": 53224.9595703125,
+               "upper": 53697.617578125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 77.0,
-               "lower": 53225.56796875,
-               "upper": 54071.246875
+               "lower": 53225.090625,
+               "upper": 53708.028515625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 78.0,
-               "lower": 53225.59140625,
-               "upper": 54099.535546875
+               "lower": 53225.30625,
+               "upper": 53718.5705078125
             },
             {
                "trajectory": "Deaths",
                "timepoint": 79.0,
-               "lower": 53225.599609375,
-               "upper": 54125.0375
+               "lower": 53225.455078125,
+               "upper": 53729.244140625
             },
             {
                "trajectory": "Deaths",
                "timepoint": 80.0,
-               "lower": 53225.6412109375,
-               "upper": 54151.0119140625
+               "lower": 53225.6197265625,
+               "upper": 53739.9326171875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 81.0,
-               "lower": 53225.6796875,
-               "upper": 54177.58984375
+               "lower": 53225.769140625,
+               "upper": 53750.7677734375
             },
             {
                "trajectory": "Deaths",
                "timepoint": 82.0,
-               "lower": 53225.688671875,
-               "upper": 54204.7046875
+               "lower": 53225.91796875,
+               "upper": 53761.6888671875
             },
             {
                "trajectory": "Deaths",
                "timepoint": 83.0,
-               "lower": 53225.7302734375,
-               "upper": 54232.416796875
+               "lower": 53226.044921875,
+               "upper": 53772.7916015625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 84.0,
+               "lower": 53226.1796875,
+               "upper": 53783.99140625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 85.0,
+               "lower": 53226.30546875,
+               "upper": 53795.2478515625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 86.0,
+               "lower": 53226.4244140625,
+               "upper": 53806.606640625
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 87.0,
+               "lower": 53226.540234375,
+               "upper": 53818.1595703125
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 88.0,
+               "lower": 53226.66640625,
+               "upper": 53829.7892578125
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 89.0,
+               "lower": 53226.8380859375,
+               "upper": 53841.5669921875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 90.0,
+               "lower": 53226.8724609375,
+               "upper": 53853.385546875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 91.0,
+               "lower": 53226.983203125,
+               "upper": 53865.38359375
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 92.0,
+               "lower": 53227.0859375,
+               "upper": 53877.46171875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 93.0,
+               "lower": 53227.212890625,
+               "upper": 53889.68671875
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 94.0,
+               "lower": 53227.272265625,
+               "upper": 53902.027734375
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 95.0,
+               "lower": 53227.377734375,
+               "upper": 53914.5048828125
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 96.0,
+               "lower": 53227.446875,
+               "upper": 53927.871484375
+            },
+            {
+               "trajectory": "Deaths",
+               "timepoint": 97.0,
+               "lower": 53227.52265625,
+               "upper": 53943.4072265625
             }
          ],
          "transform": [
@@ -2477,6 +2729,90 @@
                "value": 2135161.0
             },
             {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2136032.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2138643.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2140258.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2142132.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2144741.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2147318.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2150390.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2152964.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2155356.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2158388.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2161314.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2164850.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2168589.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Infected",
+               "value": 2173080.0
+            },
+            {
                "timepoint": 0,
                "sample_id": 0,
                "trajectory": "Hospitalized",
@@ -2801,6 +3137,90 @@
                "value": 140590.0
             },
             {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140685.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140793.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 140914.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141048.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141180.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141316.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141439.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141577.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141738.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 141948.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142158.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142359.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142603.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Hospitalized",
+               "value": 142792.0
+            },
+            {
                "timepoint": 0,
                "sample_id": 0,
                "trajectory": "Dead",
@@ -3123,6 +3543,90 @@
                "sample_id": 0,
                "trajectory": "Dead",
                "value": 53594.0
+            },
+            {
+               "timepoint": 54,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53603.0
+            },
+            {
+               "timepoint": 55,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53610.0
+            },
+            {
+               "timepoint": 56,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53611.0
+            },
+            {
+               "timepoint": 57,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53623.0
+            },
+            {
+               "timepoint": 58,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53625.0
+            },
+            {
+               "timepoint": 59,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53632.0
+            },
+            {
+               "timepoint": 60,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53641.0
+            },
+            {
+               "timepoint": 61,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53650.0
+            },
+            {
+               "timepoint": 62,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53657.0
+            },
+            {
+               "timepoint": 63,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53670.0
+            },
+            {
+               "timepoint": 64,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53676.0
+            },
+            {
+               "timepoint": 65,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53691.0
+            },
+            {
+               "timepoint": 66,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53694.0
+            },
+            {
+               "timepoint": 67,
+               "sample_id": 0,
+               "trajectory": "Dead",
+               "value": 53729.0
             }
          ]
       },
